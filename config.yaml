@@ -1,0 +1,9 @@
+---
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+indexes:
+  category: "categories"
+baseurl: "http://xzh.me"
+title: "Xiang Zhang
+...
