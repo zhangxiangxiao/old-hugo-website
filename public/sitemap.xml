@@ -3,23 +3,8 @@
   
   <url>
     <loc>http://xzh.me/</loc>
-    <lastmod>2014-03-29T00:00:00+00:00</lastmod>
+    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://xzh.me/posts/newest/</loc>
-    <lastmod>2014-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://xzh.me/posts/middle/</loc>
-    <lastmod>2014-03-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://xzh.me/posts/oldest/</loc>
-    <lastmod>2014-03-27T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
