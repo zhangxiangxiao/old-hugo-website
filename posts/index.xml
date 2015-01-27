@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Posts on Hugo Blog Template for GitHub Pages </title>
+      <title>Posts on Xiang Zhang </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://spencerlyon2.github.io/posts/index.xml</link>
+    <link>http://xzh.me/posts/index.xml/</link>
     
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Just another sample post</title>
-      <link>http://spencerlyon2.github.io/posts/newest</link>
+      <link>http://xzh.me/posts/newest/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://spencerlyon2.github.io/posts/newest</guid>
+      <guid>http://xzh.me/posts/newest/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;First Heading&lt;/h2&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Second Post</title>
-      <link>http://spencerlyon2.github.io/posts/middle</link>
+      <link>http://xzh.me/posts/middle/</link>
       <pubDate>Fri, 28 Mar 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://spencerlyon2.github.io/posts/middle</guid>
+      <guid>http://xzh.me/posts/middle/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Sample Post 1&lt;/h2&gt;
@@ -60,10 +60,10 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
     
     <item>
       <title>First Post</title>
-      <link>http://spencerlyon2.github.io/posts/oldest</link>
+      <link>http://xzh.me/posts/oldest/</link>
       <pubDate>Thu, 27 Mar 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://spencerlyon2.github.io/posts/oldest</guid>
+      <guid>http://xzh.me/posts/oldest/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Sample Post 1&lt;/h2&gt;
