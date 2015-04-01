@@ -1,0 +1,157 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <base href="http://xzh.me">
+    <title> On April Fool&#39;s: What is Wrong with RNN? </title>
+    <link rel="canonical" href="http://xzh.me/posts/aprilfoolrnn/">
+    
+
+<link rel="stylesheet" href="/css/poole.css">
+<link rel="stylesheet" href="/css/syntax.css">
+<link rel="stylesheet" href="/css/lanyon.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+</head>
+
+
+<body class="theme-base-0d">
+  
+
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    <a class="sidebar-nav-item" href="/posts">Blog</a>
+    
+    <a class="sidebar-nav-item" href="http://www.github.com/zhangxiangxiao">Github</a>
+    <a class="sidebar-nav-item" href="http://www.linkedin.com/in/zhangxiangxiao">LinkedIn</a>
+    <a class="sidebar-nav-item" href="http://plus.google.com/+XiangZhang0">Google Plus</a>
+    <a class="sidebar-nav-item" href="http://www.facebook.com/zhangxiangxiao">Facebook</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p class="right credit">
+      &copy; 2015 Xiang Zhang. Powered by <a href="http://hugo.spf13.com">Hugo</a>. Design adapted by Spencer Lyon from <a href="http://lanyon.getpoole.com">Lanyon</a>.
+    </p>
+  </div>
+</div>
+
+
+  
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/posts" title="Blog">Blog Posts</a>
+        </h3>
+      </div>
+    </div>
+
+    
+    <div class="container content">
+      <h1 class="post-title">On April Fool&#39;s: What is Wrong with RNN?</h1>
+        <section id="main">
+          <h5 id="date"> Wed Apr 1, 2015 </h5>
+          <p>Google&rsquo;s April fool surprise: reading characters in reverse order (<a href="https://com.google/">https://com.google/</a>).</p>
+
+<p>It happened to be the case that the character order in Crepe (<a href="https://github.com/zhangxiangxiao/Crepe">https://github.com/zhangxiangxiao/Crepe</a>) is also reversed.</p>
+
+<p>The original thought was that aligning the end of a document to a fixed position (in this case at the beginning) could make it easier for the fully-connected layers to associate meaning with the ending context window.</p>
+
+<p>This may have the effect of biasing classification towards the end reading of a text, which has a somewhat distant relationship with how recurrent neural network representation can be used for classification, since it decays the influence of document at the beginning but not so much at the end.</p>
+
+<p>However, later I did (only) one experiment by not reversing the character order for ending alignment, and the classification result did not change in anyway that is statistically significant.</p>
+
+<p>This was quite though-provoking for me since it might mean that decaying influence like in RNNs is probably a bad thing, or at least useless. Otherwise, why do we need bi-directional RNNs? But then again, if you are using a bi-directional RNN for contextual information, why don&rsquo;t you just use a convolutional network who naturally associates a context for you?</p>
+
+<p>Then, I went deeper in thought and started to believe that recurrent neural network is sometimes used in a wrong way in the community. Somehow regardless of situation, some researchers take RNNs for granted as the best tool for model sequences (including text, audio, time series, etc). Let me explain why this may not always make sense intuitively.</p>
+
+<p>What is wrong here is that in most cases the sequence is presented as a whole, but the way RNN models them is by pretending the future values of a sequence is unknown and adapting its internal representation by what is seen so far. Why then, do we need to pretend the future sequence is unknown while in reality it is presented to you as a whole? This apparently does not make sense. The fact that bi-directional RNN gives a performance boost to various sequence modeling tasks is also an evidence for what I am arguing here.</p>
+
+<p>Now we know the wrong, how do we correct it? Well, the answer is plain and simple: use a convolutional network instead! I even start to believe that convolutional network is the ultimate solution to perception and recognition, as long as the data span a time or space dimension.</p>
+
+<p>Of course, not all sequences could be presented as whole, especially if the target is to produce actions (such as popping out words for translation, making a robot arm to move, etc). In this case to know both the past and the future may not be possible. Then, if you think even further, recurrent neural network is pretty similar to reinforcement learning &ndash; the difference is that RNNs try to model the past, but RL tries to model the future. This could be the case in which RNN and RL could really shine: produce actions when an artificial agent has already perceived or recognized.</p>
+
+<p>Putting all these pieces together, I do think in the future state-of-the art A.I. system should use convolutional networks as their perceptive or recognitive part, and a combined form of RNN and RL as the action-producing part. To make this system works well, some memory part might be needed (oh, you want to tell me DeepMind is likely working on this?)</p>
+
+<p>By the way, today is April Fool&rsquo;s. I am not responsible for whatever I say here. :P</p>
+
+        </section>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  
+
+<div class="container">
+  <hr />
+  <hr />
+  
+
+  
+    <span class="right">
+    <em>Next: </em><a class="next" href="http://xzh.me/posts/deeplearninglandscape/"> &nbsp; The Landscape of Deep Learning</a> &raquo;
+    </span>
+  
+</div>
+
+  <br />
+  
+<div class="container">
+  <ul class="catlist">
+    <li><em>Categories: </em></li>
+    
+      <li><a href="/categories/deep-learning">deep learning</a> </li>
+    
+  </ul>
+</div>
+
+
+
+  
+  
+
+<div class="container content">
+<footer>
+  <div>
+    <p class="right credit">
+      Profile in: 
+      <a href="http://www.github.com/zhangxiangxiao">Github</a> | 
+      <a href="http://www.linkedin.com/in/zhangxiangxiao">LinkedIn</a> |
+      <a href="https://plus.google.com/+XiangZhang0">Google Plus</a> | 
+      <a href="http://www.facebook.com/zhangxiangxiao">Facebook</a>
+    </p>
+  </div>
+</footer>
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59001618-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
