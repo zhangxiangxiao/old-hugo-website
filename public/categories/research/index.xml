@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Xiang Zhang</title>
+    <link>http://xzh.me/categories/research/</link>
+    <description>Recent content in Research on Xiang Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 07 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://xzh.me/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dataset Duplication Issues for Text Understanding from Scratch</title>
+      <link>http://xzh.me/posts/datasetdup/</link>
+      <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://xzh.me/posts/datasetdup/</guid>
+      <description>&lt;p&gt;More details will come soon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
