@@ -6,7 +6,7 @@ categories:
     - "research"
 ---
 
-On April 6th 2015, we discovered some issues related to the datasets used in our technical report ["Text Understanding from Scratch"](http://arxiv.org/abs/1502.01710). These issues include multiple instances of the same sample, and overlaps between training and testing data. These issues were first discovered by Alec Radford, head of research at [indico](https://indico.io), who carefully checked a few of our released datasets and found out this issues. I want offer my thanks to him.
+On April 6th 2015, we discovered some issues related to the datasets used in our technical report ["Text Understanding from Scratch"](http://arxiv.org/abs/1502.01710). These issues include multiple instances of the same sample, and overlaps between training and testing data. These issues were first discovered by Alec Radford, head of research at [indico](https://indico.io), who carefully checked a few of our released datasets and found them. I want offer my thanks to him.
 
 Here is what I am going to do to solve this issue:
 
