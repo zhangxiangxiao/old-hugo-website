@@ -6,7 +6,7 @@ categories:
     - "research"
 ---
 
-* Update April 9th 2015: In wake of dataset duplication issues we have encountered, professor [Julian McAuley](http://cseweb.ucsd.edu/~jmcauley) updated their [SNAP Amazon Reviews dataset distribution webpage](http://snap.stanford.edu/data/web-Amazon.html) with an extra note and an extra data file about the duplication issue.
+* Update April 9th 2015: In wake of dataset duplication issues for the Amazon reviews dataset, professor [Julian McAuley](http://cseweb.ucsd.edu/~jmcauley) updated their [SNAP Amazon reviews dataset distribution webpage](http://snap.stanford.edu/data/web-Amazon.html) with an extra note and an extra data duplication file.
 
 On April 6th 2015, we discovered some issues related to the datasets used in our technical report ["Text Understanding from Scratch"](http://arxiv.org/abs/1502.01710). These issues include multiple instances of the same sample, and overlaps between training and testing data. These issues were first discovered by Alec Radford, head of research at [indico](https://indico.io), who carefully checked a few of our released datasets and found them. I want offer my thanks to him.
 
