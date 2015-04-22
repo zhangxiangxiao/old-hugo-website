@@ -34,6 +34,7 @@
           <h5 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h5>
           {{ .Content }}
         </section>
+	{{ template "_internal/disqus.html" . }}
     </div>
   </div>
 

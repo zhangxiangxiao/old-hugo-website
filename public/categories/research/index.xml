@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Xiang Zhang</title>
-    <link>http://xzh.me/categories/research/</link>
-    <description>Recent content in Research on Xiang Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Apr 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://xzh.me/categories/research/index.xml" rel="self" type="application/rss+xml" />
+      <title>Research on Xiang Zhang </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://xzh.me/categories/research/index.xml/</link>
+    
+    
+    
+    <updated>Tue, 07 Apr 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Dataset Duplication Issues for Text Understanding from Scratch</title>
       <link>http://xzh.me/posts/datasetdup/</link>
-      <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 07 Apr 2015 00:00:00 UTC</pubDate>
       
       <guid>http://xzh.me/posts/datasetdup/</guid>
       <description>
@@ -32,7 +33,7 @@
 
 &lt;p&gt;I apologize for any inconvenience and inaccurate information resulted from this. I am aware that this technical report drew a lot of attention from fellow researchers all around the world, and I will do my best to resolve the issues as soon as possible.&lt;/p&gt;
 
-&lt;h3 id=&#34;what-are-the-issues:6d4327301e838a9c8bdd4a7eb0a3f227&#34;&gt;What are the issues?&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;What are the issues?&lt;/h3&gt;
 
 &lt;p&gt;As said before, the issues are multiple instances of the same sample, and overlaps between training and testing data. I am still investigating the reasons behind these issues, but so far it looks like there were duplications from the datasets&amp;rsquo; original owners and distributors. Below is a break down of the issues for the datasets in the original technical report.&lt;/p&gt;
 
@@ -86,7 +87,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;is-the-crepe-code-affected:6d4327301e838a9c8bdd4a7eb0a3f227&#34;&gt;Is the Crepe code affected?&lt;/h3&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;Is the Crepe code affected?&lt;/h3&gt;
 
 &lt;p&gt;The release of &lt;a href=&#34;https://github.com/zhangxiangxiao/Crepe&#34;&gt;Crepe&lt;/a&gt; is idependent of the datasets. It is currently not affected by this issue. Also, because the DBPedia dataset is clean, the example usage for Crepe is still totally valid. The DBPedia dataset is kept online.&lt;/p&gt;
 
