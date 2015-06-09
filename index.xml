@@ -58,7 +58,7 @@
     </item>
     
     <item>
-      <title>Dataset Duplication Issues for Text Understanding from Scratch</title>
+      <title>Dataset Duplication Issues for Text Understanding from Scratch (Resolved)</title>
       <link>http://xzh.me/posts/datasetdup/</link>
       <pubDate>Tue, 07 Apr 2015 00:00:00 UTC</pubDate>
       
@@ -66,6 +66,7 @@
       <description>
 
 &lt;ul&gt;
+&lt;li&gt;Update June 8th 2015: The dataset duplication issues are fixed in the &lt;a href=&#34;http://arxiv.org/abs/1502.01710&#34;&gt;latest revision of our technical report&lt;/a&gt;. Some of our large-scale datasets became smaller than before, but the general conclusion in the technical report still holds. The information below is retained for your reference, although they are no longer valid. We are working on extending comparisons with stronger baseline models and releasing the datasets as soon as possible.&lt;/li&gt;
 &lt;li&gt;Update April 9th 2015: In wake of dataset duplication issues for the Amazon reviews dataset, professor &lt;a href=&#34;http://cseweb.ucsd.edu/~jmcauley&#34;&gt;Julian McAuley&lt;/a&gt; updated their &lt;a href=&#34;http://snap.stanford.edu/data/web-Amazon.html&#34;&gt;SNAP Amazon reviews dataset distribution webpage&lt;/a&gt; with an extra note and an extra data duplication file.&lt;/li&gt;
 &lt;/ul&gt;
 
