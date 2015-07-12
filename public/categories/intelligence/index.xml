@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Intelligence on Xiang Zhang </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://xzh.me/categories/intelligence/index.xml/</link>
+    <title>Intelligence on Xiang Zhang</title>
+    <link>http://xzh.me/categories/intelligence/</link>
+    <description>Recent content in Intelligence on Xiang Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 12 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://xzh.me/categories/intelligence/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
-    <updated>Tue, 21 Apr 2015 00:00:00 UTC</updated>
+    <item>
+      <title>On the Emperor&#39;s New Mind</title>
+      <link>http://xzh.me/posts/emperorsnewmind/</link>
+      <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://xzh.me/posts/emperorsnewmind/</guid>
+      <description>&lt;p&gt;Finally finished reading Roger Penrose&amp;rsquo;s classic book &amp;ldquo;The Emperor&amp;rsquo;s New Mind: Concerning Computers, Minds and The Laws of Physics&amp;rdquo;. As a junior Ph.D. student who hopes to have a career in the research of artificial intelligence (machine learning or deep learning more precisely), I was reading this book as a touch on the opposite of the belief that intelligence is achievable by machines. Apart from several of his dramatic tones towards mocking A.I. (what was that story in the pro- and epi-logue about?), this book has been a very enjoyable experience for me.&lt;/p&gt;
+
+&lt;p&gt;Roger Penrose is definitely one scientist that holds a very strong opinion on this opposite, and I do have to say that he is undoubtedly good at explaining his arguments. This book did a good job at disseminating a set of fundamental ideas from a physics perspective in relation to some very philosophical and mathematical issues. From my reading, there are two streams of ideas in the book. The first one is from mathematics, including the introduction of algorithms, Turing machines and logical proof systems. The second one is from physics, from classical mechanics to relativity and quantum mechanics and beyond. The interaction of these two streams by itself is worth reading by anyone who is pondering on the fundamental doubts of the mind, intelligence and conciousness.&lt;/p&gt;
+
+&lt;p&gt;From the first stream, the book&amp;rsquo;s main argument rests on the Turing halting problem and Gödel&amp;rsquo;s incompleteness theorems. From these theorems, he argues that machines could not be like humans since it could not know the truthness of these self-referencing statements. I am not yet convinced by this seemingly sound argument, because it rests on the fact that there is certain statement about the system itself that it could not know true or false. We humans could perceive that these incomplete statements are true, because we are not these systems therefore they are not self-referencing statements for ourselves. We do not have an answer to whether we ourselves are free from these incomplete limitations, since if we had the answer it would violate the incompleteness theorems. Who knows, maybe some aliens would think of us as no difference from we think of the machines, and apply a form of Cantor&amp;rsquo;s diagonalization to say that &amp;ldquo;look, humans cannot have mind because they cannot understand these true statements that are obvious to us&amp;rdquo;! As a result, the presumption that humans are free from incompleteness is one most ridiculous hidden idea in the book.&lt;/p&gt;
+
+&lt;p&gt;In the second stream, the book became much more constructive. It is a great journey to explore the searching of an explanation for the mind through the vast space of knowledge in physics. However, throughout the arguments, the ideas could only belong to a set of speculations. This is not a surprise since he argues for the necessity of a correct quantum gravity (CQG) theory to explain the human mind, which should ultimately unify quantum mechanics and general relativity under a single mathematical framework. It is the fact that no such theory yet exists that shakes down many of his arguments and made them merely speculations. As a result, this book in my opinion does a very bad job at opposing artificial intelligence in both streams.&lt;/p&gt;
+
+&lt;p&gt;In general, the book is still very much enjoyable just because it contains a grand set of fundamental knowledge. It is particularly so reading from a critic point of view. Roger Penrose also has two later books in the same string of thought, which undoubtedly may explain his ideas better and may resolve some of this book&amp;rsquo;s issues. I am looking forward to reading them as valuable thought excercises, but may be after a few books from some other human endeavors.&lt;/p&gt;
+
+&lt;p&gt;Finally, here is a video where Roger Penrose explains some of his ideas. Watch with a critic&amp;rsquo;s mind!&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34; style=&#34;text-align: center;&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/eVq39QbFQXE&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>One Precondition for Intelligence</title>
       <link>http://xzh.me/posts/precondition/</link>
-      <pubDate>Tue, 21 Apr 2015 00:00:00 UTC</pubDate>
+      <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/precondition/</guid>
       <description>
 
 &lt;p&gt;Medical study shows that two consciousness could exist in the same body, if the connection between the left and the right brain hemispheres are damaged. Does this medical fact tells us something more about intelligence? My opinion is, it is an evidence for the hypothesis that certain deficiency in low-level communication is a precondition for intelligence. I know that sounds crazy or perhaps hard to understand, but please allow me to explain.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;A Different Understanding of Alien Hand Syndrome&lt;/h3&gt;
+&lt;h3 id=&#34;a-different-understanding-of-alien-hand-syndrome:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;A Different Understanding of Alien Hand Syndrome&lt;/h3&gt;
 
 &lt;p&gt;This Friday night I was watching the rather dramatized and thrilling episodes of &amp;ldquo;Dark Matters: Twisted But True&amp;rdquo;. In episode 4 of season 1, there is a story about alien hand syndrome, a rare neurological disorder that causes hand movement without the person being aware of what is happening or having control over the action. In the story, a woman&amp;rsquo;s left hand tried to kill herself without her being able to control it. After some thrilling mood rendering, it was revealed that her brain had some permanent damage resulted from a stroke prior to the syndrome. The problem was that the connection between her brain&amp;rsquo;s left and right hemispheres was broken, and it created two consciousness in the same body.&lt;/p&gt;
 
@@ -33,7 +58,7 @@
 
 &lt;p&gt;One can debate the causation fallacy above endlessly untill some experiments can be done to prove one and disprove the other. But before that, I will assume the second theory is true throughout the rest of the blog.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;Communication (not?) as a Part of Intelligence&lt;/h3&gt;
+&lt;h3 id=&#34;communication-not-as-a-part-of-intelligence:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;Communication (not?) as a Part of Intelligence&lt;/h3&gt;
 
 &lt;p&gt;The focus of the split-brain phenomenon rests on the connection between left and right hemispheres. If the connection is broken, then one can easily see signs of two consciousness. This means that to be a coherent intelligent entity, the place in which consciousness exists (in this case the brain) must have proper physical connection inside its every component. The necessity of such connection suggests that communication is a crucial part for intelligence.&lt;/p&gt;
 
@@ -45,7 +70,7 @@
 
 &lt;p&gt;All the above discussions are about high-level communication. I think that people can argue endlessly about whether high-level communication is a necessity for intelligence, and I just gave one example above. On the other hand, the question that whether low-level communication is necessary for intelligence is not an ambiguous question in my opinion, especially for the boundary of something being one or multiple intelligent entity. This is already proved by the alient hand syndrome mentioned in the previous section &amp;ndash; low-level communication is a necessity.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;One Precondition for Intelligence&lt;/h3&gt;
+&lt;h3 id=&#34;one-precondition-for-intelligence:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;One Precondition for Intelligence&lt;/h3&gt;
 
 &lt;p&gt;Of course, being intelligent alone seems very meaningless. The meaning of being intelligent, at least in the sense for humans, partially rests in the fact that we can communicate with other intelligent entities. On the other hand, if Turing&amp;rsquo;s definition on intelligence is correct, then to decide whether some machine is intelligence at least two other intelligent entities must present &amp;ndash; one to be immitated and the other the judge. Combining with out previous discussion on high-level and low-evel communication, this seemingly boring reasoning gives us a quite striking conclusion: one necessity for the existence of intelligence is that there must be certain deficiency in low-level communication.&lt;/p&gt;
 
