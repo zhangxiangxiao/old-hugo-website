@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Posts on Xiang Zhang </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://xzh.me/posts/index.xml/</link>
+    <title>Posts on Xiang Zhang</title>
+    <link>http://xzh.me/posts/</link>
+    <description>Recent content in Posts on Xiang Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 12 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://xzh.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    
-    <updated>Tue, 21 Apr 2015 00:00:00 UTC</updated>
+    <item>
+      <title>On the Emperor&#39;s New Mind</title>
+      <link>http://xzh.me/posts/emperorsnewmind/</link>
+      <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://xzh.me/posts/emperorsnewmind/</guid>
+      <description>&lt;p&gt;Finally finished reading Roger Penrose&amp;rsquo;s classic book &amp;ldquo;The Emperor&amp;rsquo;s New Mind: Concerning Computers, Minds and The Laws of Physics&amp;rdquo;. As a junior Ph.D. student who hopes to have a career in the research of artificial intelligence (machine learning or deep learning more precisely), I was reading this book as a touch on the opposite of the belief that intelligence is achievable by machines. Apart from several of his dramatic tones towards mocking A.I. (what was that story in the pro- and epi-logue about?), this book has been a very enjoyable experience for me.&lt;/p&gt;
+
+&lt;p&gt;Roger Penrose is definitely one scientist that holds a very strong opinion on this opposite, and I do have to say that he is undoubtedly good at explaining his arguments. This book did a good job at disseminating a set of fundamental ideas from a physics perspective in relation to some very philosophical and mathematical issues. From my reading, there are two streams of ideas in the book. The first one is from mathematics, including the introduction of algorithms, Turing machines and logical proof systems. The second one is from physics, from classical mechanics to relativity and quantum mechanics and beyond. The interaction of these two streams by itself is worth reading by anyone who is pondering on the fundamental doubts of the mind, intelligence and conciousness.&lt;/p&gt;
+
+&lt;p&gt;From the first stream, the book&amp;rsquo;s main argument rests on the Turing halting problem and Gödel&amp;rsquo;s incompleteness theorems. From these theorems, he argues that machines could not be like humans since it could not know the truthness of these self-referencing statements. I am not yet convinced by this seemingly sound argument, because it rests on the fact that there is certain statement about the system itself that it could not know true or false. We humans could perceive that these incomplete statements are true, because we are not these systems therefore they are not self-referencing statements for ourselves. We do not have an answer to whether we ourselves are free from these incomplete limitations, since if we had the answer it would violate the incompleteness theorems. Who knows, maybe some aliens would think of us as no difference from we think of the machines, and apply a form of Cantor&amp;rsquo;s diagonalization to say that &amp;ldquo;look, humans cannot have mind because they cannot understand these true statements that are obvious to us&amp;rdquo;! As a result, the presumption that humans are free from incompleteness is one most ridiculous hidden idea in the book.&lt;/p&gt;
+
+&lt;p&gt;In the second stream, the book became much more constructive. It is a great journey to explore the searching of an explanation for the mind through the vast space of knowledge in physics. However, throughout the arguments, the ideas could only belong to a set of speculations. This is not a surprise since he argues for the necessity of a correct quantum gravity (CQG) theory to explain the human mind, which should ultimately unify quantum mechanics and general relativity under a single mathematical framework. It is the fact that no such theory yet exists that shakes down many of his arguments and made them merely speculations. As a result, this book in my opinion does a very bad job at opposing artificial intelligence in both streams.&lt;/p&gt;
+
+&lt;p&gt;In general, the book is still very much enjoyable just because it contains a grand set of fundamental knowledge. It is particularly so reading from a critic point of view. Roger Penrose also has two later books in the same string of thought, which undoubtedly may explain his ideas better and may resolve some of this book&amp;rsquo;s issues. I am looking forward to reading them as valuable thought excercises, but may be after a few books from some other human endeavors.&lt;/p&gt;
+
+&lt;p&gt;Finally, here is a video where Roger Penrose explains some of his ideas. Watch with a critic&amp;rsquo;s mind!&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34; style=&#34;text-align: center;&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/eVq39QbFQXE&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>One Precondition for Intelligence</title>
       <link>http://xzh.me/posts/precondition/</link>
-      <pubDate>Tue, 21 Apr 2015 00:00:00 UTC</pubDate>
+      <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/precondition/</guid>
       <description>
 
 &lt;p&gt;Medical study shows that two consciousness could exist in the same body, if the connection between the left and the right brain hemispheres are damaged. Does this medical fact tells us something more about intelligence? My opinion is, it is an evidence for the hypothesis that certain deficiency in low-level communication is a precondition for intelligence. I know that sounds crazy or perhaps hard to understand, but please allow me to explain.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;A Different Understanding of Alien Hand Syndrome&lt;/h3&gt;
+&lt;h3 id=&#34;a-different-understanding-of-alien-hand-syndrome:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;A Different Understanding of Alien Hand Syndrome&lt;/h3&gt;
 
 &lt;p&gt;This Friday night I was watching the rather dramatized and thrilling episodes of &amp;ldquo;Dark Matters: Twisted But True&amp;rdquo;. In episode 4 of season 1, there is a story about alien hand syndrome, a rare neurological disorder that causes hand movement without the person being aware of what is happening or having control over the action. In the story, a woman&amp;rsquo;s left hand tried to kill herself without her being able to control it. After some thrilling mood rendering, it was revealed that her brain had some permanent damage resulted from a stroke prior to the syndrome. The problem was that the connection between her brain&amp;rsquo;s left and right hemispheres was broken, and it created two consciousness in the same body.&lt;/p&gt;
 
@@ -33,7 +58,7 @@
 
 &lt;p&gt;One can debate the causation fallacy above endlessly untill some experiments can be done to prove one and disprove the other. But before that, I will assume the second theory is true throughout the rest of the blog.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;Communication (not?) as a Part of Intelligence&lt;/h3&gt;
+&lt;h3 id=&#34;communication-not-as-a-part-of-intelligence:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;Communication (not?) as a Part of Intelligence&lt;/h3&gt;
 
 &lt;p&gt;The focus of the split-brain phenomenon rests on the connection between left and right hemispheres. If the connection is broken, then one can easily see signs of two consciousness. This means that to be a coherent intelligent entity, the place in which consciousness exists (in this case the brain) must have proper physical connection inside its every component. The necessity of such connection suggests that communication is a crucial part for intelligence.&lt;/p&gt;
 
@@ -45,7 +70,7 @@
 
 &lt;p&gt;All the above discussions are about high-level communication. I think that people can argue endlessly about whether high-level communication is a necessity for intelligence, and I just gave one example above. On the other hand, the question that whether low-level communication is necessary for intelligence is not an ambiguous question in my opinion, especially for the boundary of something being one or multiple intelligent entity. This is already proved by the alient hand syndrome mentioned in the previous section &amp;ndash; low-level communication is a necessity.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;One Precondition for Intelligence&lt;/h3&gt;
+&lt;h3 id=&#34;one-precondition-for-intelligence:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;One Precondition for Intelligence&lt;/h3&gt;
 
 &lt;p&gt;Of course, being intelligent alone seems very meaningless. The meaning of being intelligent, at least in the sense for humans, partially rests in the fact that we can communicate with other intelligent entities. On the other hand, if Turing&amp;rsquo;s definition on intelligence is correct, then to decide whether some machine is intelligence at least two other intelligent entities must present &amp;ndash; one to be immitated and the other the judge. Combining with out previous discussion on high-level and low-evel communication, this seemingly boring reasoning gives us a quite striking conclusion: one necessity for the existence of intelligence is that there must be certain deficiency in low-level communication.&lt;/p&gt;
 
@@ -60,7 +85,7 @@
     <item>
       <title>Dataset Duplication Issues for Text Understanding from Scratch (Resolved)</title>
       <link>http://xzh.me/posts/datasetdup/</link>
-      <pubDate>Tue, 07 Apr 2015 00:00:00 UTC</pubDate>
+      <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/datasetdup/</guid>
       <description>
@@ -82,7 +107,7 @@
 
 &lt;p&gt;I apologize for any inconvenience and inaccurate information resulted from this. I am aware that this technical report drew a lot of attention from fellow researchers all around the world, and I will do my best to resolve the issues as soon as possible.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;What are the issues?&lt;/h3&gt;
+&lt;h3 id=&#34;what-are-the-issues:6d4327301e838a9c8bdd4a7eb0a3f227&#34;&gt;What are the issues?&lt;/h3&gt;
 
 &lt;p&gt;As said before, the issues are multiple instances of the same sample, and overlaps between training and testing data. I am still investigating the reasons behind these issues, but so far it looks like there were duplications from the datasets&amp;rsquo; original owners and distributors. Below is a break down of the issues for the datasets in the original technical report.&lt;/p&gt;
 
@@ -136,7 +161,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;Is the Crepe code affected?&lt;/h3&gt;
+&lt;h3 id=&#34;is-the-crepe-code-affected:6d4327301e838a9c8bdd4a7eb0a3f227&#34;&gt;Is the Crepe code affected?&lt;/h3&gt;
 
 &lt;p&gt;The release of &lt;a href=&#34;https://github.com/zhangxiangxiao/Crepe&#34;&gt;Crepe&lt;/a&gt; is idependent of the datasets. It is currently not affected by this issue. Also, because the DBPedia dataset is clean, the example usage for Crepe is still totally valid. The DBPedia dataset is kept online.&lt;/p&gt;
 
@@ -147,7 +172,7 @@
     <item>
       <title>On April Fool&#39;s: What is Wrong with RNN?</title>
       <link>http://xzh.me/posts/aprilfoolrnn/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 UTC</pubDate>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/aprilfoolrnn/</guid>
       <description>&lt;p&gt;Google&amp;rsquo;s April fool surprise: reading characters in reverse order (&lt;a href=&#34;https://com.google/&#34;&gt;https://com.google/&lt;/a&gt;).&lt;/p&gt;
@@ -179,7 +204,7 @@
     <item>
       <title>The Landscape of Deep Learning</title>
       <link>http://xzh.me/posts/deeplearninglandscape/</link>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 UTC</pubDate>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/deeplearninglandscape/</guid>
       <description>
@@ -188,7 +213,7 @@
 
 &lt;p&gt;In my opinion, the popular deep learning area contains four main research trends. They include optimization, generalization, representation and applications. For each of them, there are both a practical aspect and a theoretical aspect. Let&amp;rsquo;s take a closer look at each of them.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Optimization&lt;/h3&gt;
+&lt;h3 id=&#34;optimization:874d3f90a0e473dc1a9e85085a11d03a&#34;&gt;Optimization&lt;/h3&gt;
 
 &lt;p&gt;It seems that almost all problems in deep learning can be reduced to solving mathematical optimization problems. Therefore, numerical optimization is one of the most important research trend for deep learing.&lt;/p&gt;
 
@@ -196,7 +221,7 @@
 
 &lt;p&gt;However, on the theoretical side, the only clear subject we know about is convex optimization. The unfortunate fact that most deep learning models are non-convex poses a huge gap between the practical and theoretical sides in optimization. Motivated by this, some researchers start to dig into the properties of some commonly seen but also narrowly defined models and loss functions, trying to get some information regarding the properties of local optima produced by such non-convex optimization procedures.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;Generalization&lt;/h3&gt;
+&lt;h3 id=&#34;generalization:874d3f90a0e473dc1a9e85085a11d03a&#34;&gt;Generalization&lt;/h3&gt;
 
 &lt;p&gt;Generalizability concerns whether the training error of a model could approximate the true average testing error on all possible sampling of a given problem&amp;rsquo;s data. We can approximately think of it as the difference between training error and testing error. Before deep learing became popular, one major problem in machine learning has been about controlling the generalization error.&lt;/p&gt;
 
@@ -204,7 +229,7 @@
 
 &lt;p&gt;For theorists, the effectiveness of deep learning has put heavy doubt on the theories of PAC-learning. All of the theories in this style are about &amp;ldquo;upper-bounds of upperbounds of upper-bounds&amp;hellip;&amp;rdquo;, for which the essence only concerns two kinds of statistical concepts &amp;ndash; concentration inequalities and complexity measurement. Practitioners have shown that these theories have very unrealistic estimation of generalization errors for real-world applications. Personally I believe the current gap betwen practitioners and theorists must be closed. It really should not have been like this, especially when the research in functional analysis is already pretty complete. I also feel that to make advancement in this, we need to better understand the theory in representation of deep learning models, which I will discuss in the following.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;Representation&lt;/h3&gt;
+&lt;h3 id=&#34;representation:874d3f90a0e473dc1a9e85085a11d03a&#34;&gt;Representation&lt;/h3&gt;
 
 &lt;p&gt;Representation is a concept recently proposed by researchers in deep learning. For me, representation concerns the relationship between deep learning models and the problems they try to solve. Therefore, the questions about representation are bi-directional: one one hand, we want to know that given a deep learning model what kind of solutions to problems it can represent; on the other hand, we can also ask whether there exists a deep learning model to produce some representation for solving a given problem.&lt;/p&gt;
 
@@ -212,7 +237,7 @@
 
 &lt;p&gt;However, we really do not have much to say about any theory concerning representation, except for some inspirational ideas borrowed from coginitive psychology or neural science. This is mostly because the theory of representation is drastically different for different problems. The only thing we currently can do now is to think whether and how humans could solve a problem, and then design a model to reduce it to a learning process. This is essentially an immitation game, which is a philosophical definition of intelligence proposed by Alan Turing in his 1950 paper &amp;ldquo;Computing Machinery and Intelligence&amp;rdquo;. Intuitively I also doubt the feasibility of an ultimate representation theory, since it feels like a Laplace&amp;rsquo;s demon whose existence would draw unsolvable paradoxes to the real world.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Applications&lt;/h3&gt;
+&lt;h3 id=&#34;applications:874d3f90a0e473dc1a9e85085a11d03a&#34;&gt;Applications&lt;/h3&gt;
 
 &lt;p&gt;The development of deep learning accompanies its revolutionization of other fields. In the past few years, deep learning has been something like a biased &amp;ldquo;dare or not&amp;rdquo; game &amp;ndash; if you dare to try, there chance of success is most likely guaranteed. Of course, this benefits largely from the explosion on the amount of data, and the availability of more powerful computational resources. At the same time, the knowledge accumulated from exploring deep learning and neural network in the past 30 years also plays an important role.&lt;/p&gt;
 
