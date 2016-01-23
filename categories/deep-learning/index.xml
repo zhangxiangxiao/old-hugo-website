@@ -5,8 +5,46 @@
     <link>http://xzh.me/categories/deep-learning/</link>
     <description>Recent content in Deep Learning on Xiang Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Jan 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://xzh.me/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Evolve to Sum</title>
+      <link>http://xzh.me/posts/evolvetosum/</link>
+      <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://xzh.me/posts/evolvetosum/</guid>
+      <description>
+
+&lt;p&gt;Here is one simple question: how to make machines learn to sum up two numbers? Of course, this problem largely depends on how the numbers are represented. If they are represented in any of the finite-precision float-point format, a simple regression where both weights are one would solve the problem. But that&amp;rsquo;s not what I mean here. What I mean is, given the symbolic representation of numbers (i.e., each number is a sequence of digits), how could a machine learn to sum them up?&lt;/p&gt;
+
+&lt;p&gt;There have been research projects in this realm, but the results are far from satisfactory and none of them can produce a machine that can sum up two numbers of arbitrary length. In this blog I want to offer an alternative view of this problem by dichotomizing learning into individual learning and evolutionary learning. Then, I provide an initial thought on the possibility of a new learning paradigm that is inspired not only from how each of us learns, but also how knowledge is formed during the entire human evolutionary process.&lt;/p&gt;
+
+&lt;h3 id=&#34;learning-to-sum:f4c76188421e5843dda1963eace05e1c&#34;&gt;Learning to Sum&lt;/h3&gt;
+
+&lt;p&gt;Yesterday I was invited to &lt;a href=&#34;https://www.zhihu.com/question/39727411/answer/82778981&#34;&gt;answer a question on Zhihu&lt;/a&gt;, a Chinese equivalent of Quora, about whether deep learning models can be used to learn to sum. Immediately I thought that the question is actually more difficult to answer than it appears to be, partly because it is always easier to disprove the possibility of something than to prove it.&lt;/p&gt;
+
+&lt;p&gt;Knowing that we have very limited results in learning arithmetic operations, I started to recall a thought inspired by the book &amp;ldquo;Probably Approximately Correct: Nature’s Algorithms for Learning and Prospering in a Complex World&amp;rdquo;, written by Turing award laureate Leslie G. Valiant. The book is mainly about an analogy of the probably approximately correct (PAC) learning theory and the evolutionary process of human beings. But my thought is only tangentially related to this analogy. It is more about a limitation on the current connectionist machine learning paradigm in relation to the dichotomy of individual learning and evolutionay process.&lt;/p&gt;
+
+&lt;p&gt;It is better explained using the problem in question &amp;ndash; summation. The way each of us learns arithmetic operations such as summation is not quite what connectionist machine learning paradigm advocates &amp;ndash; end-to-end learning by showing result examples of two numbers summing together. Rather, we learn arithmetic operations via a strongly supervised process with the help of our math teachers in elementary school. When learning to sum, each of us were not only presented with examples of correct or incorrect sums, but also the proceeding steps of this arithmetic operation. If we were to train a deep learning model to do summation in this way, we would start with perhaps a simple recurrent neural net, design a process for this network to do summation, and train the network using samples of this process in a strongly supervised fashion. We can think of ourselves as the math teachers of this student recurrent neural network, teaching it not only right from wrong but also the steps to make it right.&lt;/p&gt;
+
+&lt;p&gt;What is missing in the learning process above is the question of where summation comes from, or even where the concept of numbers comes from. We can find inspiration of such questions in humans, but it would no longer be possible to think of it in the scope of each human individual. Rather, we would have to think of human race as a whole and find answers in its entire evolutionary process. The answer of such questions immediately becomes demystified in this way of thinking, in that the concept of numbers and the process of arithmetic comes from generations of historical human activities. First of all, there is necessity of counting because we have learnt to produce and store goods. That was the reason for the concept of numbers. Then, when human society is developed enough for each individual to produce extra goods than for himself, there comes trading. Arithmetic naturally becomes a necessity, and since then we started to dissemminate the correct way of doing arithmetic until there is education and we started to teach it generation by generation. The description here is an extremely condensed version, and a better storytellling can be found in &lt;a href=&#34;http://www.bbc.co.uk/programmes/b00dwf4f&#34;&gt;BBC&amp;rsquo;s documentary &amp;lsquo;The Story of Maths&amp;rsquo;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The discussion above also hints on one problem of current generation deep learning research. The learning paradigm we used to design models is unexceptionally individual learning. One may argue that there is some aspect of deep learning models which implements some of evolution&amp;rsquo;s achievements &amp;ndash; such as convolutional network implements an analogy of our visual cortex (not the eye &amp;ndash; the eye is analogized by a camera). But this is only a slighly blurred line between individual learning and evolutionary learning. It is apparently impossible for evolution to be responsible for every part of the visual system &amp;ndash; maybe some lower layers that detect edges, but definitely not the upper layers where we form concepts and classification of objects. It does not disprove the necessity of a evolutionary learning paradigm.&lt;/p&gt;
+
+&lt;h3 id=&#34;evolve-to-sum:f4c76188421e5843dda1963eace05e1c&#34;&gt;Evolve to Sum&lt;/h3&gt;
+
+&lt;p&gt;Summation and other arithmetic operations are not the only things that evolutionary learning models. Common sense, culture, art and language &amp;ndash; traditionally hard to model by connectionist ideas &amp;ndash; could also be thought of as by-products of human evolution. If we have a way to let machines to evolve themselves, it may generate its own common sense, culture and art. This is not at all what evolutionary algorithm is about &amp;ndash; we are talking about evolution of models in a more literal sense.&lt;/p&gt;
+
+&lt;p&gt;Admittedly, there are many problems that are unclear about an evolutionary learning process. The first one is whether there is an objective for machine evolution. I personally think that this is more about what the models should do rather than what is the optimization objective. Like human beings, the goal of a machine should be about survival in the world it exists. This suggests a different design principle for machines &amp;ndash; rather than to design machines to assist our daily lives, we would design machines that strive to surve themselves. It means we must equip machines with the ability of control its own survival needs. In the context of our current generation eletronic technology, one way to do this is probably equip it with the ability to plug itself into power outlets, at least mechanically. Then, we can use our current machine learning methods to let it learn how to get plugged with power in its software.&lt;/p&gt;
+
+&lt;p&gt;The second problem is how could machines reproduce, since only with reproduction we would have generations of machines to constitute the process of evolution. One cheap way to do this is probably take over reproduction ourselves. We can keep producing copies of such machines, and evolution becomes choosing the best surviving learning machines to initialize the new ones. When technology is advanced enough, there will probably be a time that one of the machine will learn to reproduce by themselves, but we probably would not want to give the machines such ability.&lt;/p&gt;
+
+&lt;p&gt;The last problem is what the software of such machines should look like. I believe it should consist of three parts: perception, reasoning and action. The perception part could be on vision or sound, and there are already many models in research for this. The reasoning part is relatively new, including perhaps the current trend on using embedding and memory techniques. As for the action part, there are at least two potential models &amp;ndash; recurrent neural networks and reinforcement learning. One attempts to model the past, and the other try to predict the future reward.&lt;/p&gt;
+
+&lt;p&gt;Now, let&amp;rsquo;s go back to the question of learning to sum. How can we discover whether the machine can do sum? Well, I think the question is probably a wrong one. A better question is probably this: is computing summation a necessity for the evolution of machines?&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>On April Fool&#39;s: What is Wrong with RNN?</title>
