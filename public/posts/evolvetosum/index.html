@@ -1,0 +1,187 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <base href="http://xzh.me">
+    <title> Evolve to Sum </title>
+    <link rel="canonical" href="http://xzh.me/posts/evolvetosum/">
+    
+
+<link rel="stylesheet" href="/css/poole.css">
+<link rel="stylesheet" href="/css/syntax.css">
+<link rel="stylesheet" href="/css/lanyon.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+</head>
+
+
+<body class="theme-base-0d">
+  
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5537b54655524ca3" async="async"></script>
+
+  
+
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    <a class="sidebar-nav-item" href="/posts">Blog</a>
+    
+    <a class="sidebar-nav-item" href="http://www.github.com/zhangxiangxiao">Github</a>
+    <a class="sidebar-nav-item" href="http://www.linkedin.com/in/zhangxiangxiao">LinkedIn</a>
+    <a class="sidebar-nav-item" href="http://plus.google.com/+XiangZhang0">Google Plus</a>
+    <a class="sidebar-nav-item" href="http://www.facebook.com/zhangxiangxiao">Facebook</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p class="right credit">
+      &copy; 2015 Xiang Zhang. Powered by <a href="http://hugo.spf13.com">Hugo</a>. Design adapted by Spencer Lyon from <a href="http://lanyon.getpoole.com">Lanyon</a>.
+    </p>
+  </div>
+</div>
+
+
+  
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/posts" title="Blog">Blog Posts</a>
+        </h3>
+      </div>
+    </div>
+
+    
+    <div class="container content">
+      <h1 class="post-title">Evolve to Sum</h1>
+      
+      <div class="addthis_sharing_toolbox" style="text-align:right;"></div>
+        <section id="main">
+          <h5 id="date"> Sat Jan 23, 2016 </h5>
+          
+
+<p>Here is one simple question: how to make machines learn to sum up two numbers? Of course, this problem largely depends on how the numbers are represented. If they are represented in any of the finite-precision float-point format, a simple regression where both weights are one would solve the problem. But that&rsquo;s not what I mean here. What I mean is, given the symbolic representation of numbers (i.e., each number is a sequence of digits), how could a machine learn to sum them up?</p>
+
+<p>There have been research projects in this realm, but the results are far from satisfactory and none of them can produce a machine that can sum up two numbers of arbitrary length. In this blog I want to offer an alternative view of this problem by dichotomizing learning into individual learning and evolutionary learning. Then, I provide an initial thought on the possibility of a new learning paradigm that is inspired not only from how each of us learns, but also how knowledge is formed during the entire human evolutionary process.</p>
+
+<h3 id="learning-to-sum:f4c76188421e5843dda1963eace05e1c">Learning to Sum</h3>
+
+<p>Yesterday I was invited to <a href="https://www.zhihu.com/question/39727411/answer/82778981">answer a question on Zhihu</a>, a Chinese equivalent of Quora, about whether deep learning models can be used to learn to sum. Immediately I thought that the question is actually more difficult to answer than it appears to be, partly because it is always easier to disprove the possibility of something than to prove it.</p>
+
+<p>Knowing that we have very limited results in learning arithmetic operations, I started to recall a thought inspired by the book &ldquo;Probably Approximately Correct: Nature’s Algorithms for Learning and Prospering in a Complex World&rdquo;, written by Turing award laureate Leslie G. Valiant. The book is mainly about an analogy of the probably approximately correct (PAC) learning theory and the evolutionary process of human beings. But my thought is only tangentially related to this analogy. It is more about a limitation on the current connectionist machine learning paradigm in relation to the dichotomy of individual learning and evolutionay process.</p>
+
+<p>It is better explained using the problem in question &ndash; summation. The way each of us learns arithmetic operations such as summation is not quite what connectionist machine learning paradigm advocates &ndash; end-to-end learning by showing result examples of two numbers summing together. Rather, we learn arithmetic operations via a strongly supervised process with the help of our math teachers in elementary school. When learning to sum, each of us were not only presented with examples of correct or incorrect sums, but also the proceeding steps of this arithmetic operation. If we were to train a deep learning model to do summation in this way, we would start with perhaps a simple recurrent neural net, design a process for this network to do summation, and train the network using samples of this process in a strongly supervised fashion. We can think of ourselves as the math teachers of this student recurrent neural network, teaching it not only right from wrong but also the steps to make it right.</p>
+
+<p>What is missing in the learning process above is the question of where summation comes from, or even where the concept of numbers comes from. We can find inspiration of such questions in humans, but it would no longer be possible to think of it in the scope of each human individual. Rather, we would have to think of human race as a whole and find answers in its entire evolutionary process. The answer of such questions immediately becomes demystified in this way of thinking, in that the concept of numbers and the process of arithmetic comes from generations of historical human activities. First of all, there is necessity of counting because we have learnt to produce and store goods. That was the reason for the concept of numbers. Then, when human society is developed enough for each individual to produce extra goods than for himself, there comes trading. Arithmetic naturally becomes a necessity, and since then we started to dissemminate the correct way of doing arithmetic until there is education and we started to teach it generation by generation. The description here is an extremely condensed version, and a better storytellling can be found in <a href="http://www.bbc.co.uk/programmes/b00dwf4f">BBC&rsquo;s documentary &lsquo;The Story of Maths&rsquo;</a>.</p>
+
+<p>The discussion above also hints on one problem of current generation deep learning research. The learning paradigm we used to design models is unexceptionally individual learning. One may argue that there is some aspect of deep learning models which implements some of evolution&rsquo;s achievements &ndash; such as convolutional network implements an analogy of our visual cortex (not the eye &ndash; the eye is analogized by a camera). But this is only a slighly blurred line between individual learning and evolutionary learning. It is apparently impossible for evolution to be responsible for every part of the visual system &ndash; maybe some lower layers that detect edges, but definitely not the upper layers where we form concepts and classification of objects. It does not disprove the necessity of a evolutionary learning paradigm.</p>
+
+<h3 id="evolve-to-sum:f4c76188421e5843dda1963eace05e1c">Evolve to Sum</h3>
+
+<p>Summation and other arithmetic operations are not the only things that evolutionary learning models. Common sense, culture, art and language &ndash; traditionally hard to model by connectionist ideas &ndash; could also be thought of as by-products of human evolution. If we have a way to let machines to evolve themselves, it may generate its own common sense, culture and art. This is not at all what evolutionary algorithm is about &ndash; we are talking about evolution of models in a more literal sense.</p>
+
+<p>Admittedly, there are many problems that are unclear about an evolutionary learning process. The first one is whether there is an objective for machine evolution. I personally think that this is more about what the models should do rather than what is the optimization objective. Like human beings, the goal of a machine should be about survival in the world it exists. This suggests a different design principle for machines &ndash; rather than to design machines to assist our daily lives, we would design machines that strive to surve themselves. It means we must equip machines with the ability of control its own survival needs. In the context of our current generation eletronic technology, one way to do this is probably equip it with the ability to plug itself into power outlets, at least mechanically. Then, we can use our current machine learning methods to let it learn how to get plugged with power in its software.</p>
+
+<p>The second problem is how could machines reproduce, since only with reproduction we would have generations of machines to constitute the process of evolution. One cheap way to do this is probably take over reproduction ourselves. We can keep producing copies of such machines, and evolution becomes choosing the best surviving learning machines to initialize the new ones. When technology is advanced enough, there will probably be a time that one of the machine will learn to reproduce by themselves, but we probably would not want to give the machines such ability.</p>
+
+<p>The last problem is what the software of such machines should look like. I believe it should consist of three parts: perception, reasoning and action. The perception part could be on vision or sound, and there are already many models in research for this. The reasoning part is relatively new, including perhaps the current trend on using embedding and memory techniques. As for the action part, there are at least two potential models &ndash; recurrent neural networks and reinforcement learning. One attempts to model the past, and the other try to predict the future reward.</p>
+
+<p>Now, let&rsquo;s go back to the question of learning to sum. How can we discover whether the machine can do sum? Well, I think the question is probably a wrong one. A better question is probably this: is computing summation a necessity for the evolution of machines?</p>
+
+        </section>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'xiangzhang';
+    var disqus_identifier = 'http:\/\/xzh.me\/posts\/evolvetosum\/';
+    var disqus_title = 'Evolve to Sum';
+    var disqus_url = 'http:\/\/xzh.me\/posts\/evolvetosum\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  
+
+<div class="container">
+  <hr />
+  <hr />
+  
+
+  
+    <span class="right">
+    <em>Next: </em><a class="next" href="http://xzh.me/posts/emperorsnewmind/"> &nbsp; On the Emperor&#39;s New Mind</a> &raquo;
+    </span>
+  
+</div>
+
+  <br />
+  
+<div class="container">
+  <ul class="catlist">
+    <li><em>Categories: </em></li>
+    
+      <li><a href="/categories/intelligence">intelligence</a> </li>
+    
+      <li><a href="/categories/deep-learning">deep learning</a> </li>
+    
+      <li><a href="/categories/research">research</a> </li>
+    
+  </ul>
+</div>
+
+
+
+  
+  
+
+<div class="container content">
+<footer>
+  <div>
+    <p class="right credit">
+      Profile in: 
+      <a href="http://www.github.com/zhangxiangxiao">Github</a> | 
+      <a href="http://www.linkedin.com/in/zhangxiangxiao">LinkedIn</a> |
+      <a href="https://plus.google.com/+XiangZhang0">Google Plus</a> | 
+      <a href="http://www.facebook.com/zhangxiangxiao">Facebook</a>
+    </p>
+  </div>
+</footer>
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59001618-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
