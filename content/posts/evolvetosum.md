@@ -8,7 +8,7 @@ categories:
     - "research"
 ---
 
-Here is one simple question: how to make machines learn to sum up two numbers? Of course, this problem largely depends on how the numbers are represented. If they are represented in any of the finite-precision float-point format, a simple regression where both weights are one would solve the problem. But that's not what I mean here. What I mean is, given the symbolic representation of numbers (i.e., each number is a sequence of digits), how could a machine learn to sum them up?
+Here is one simple question: how to make machines learn to sum up two numbers? Of course, this problem largely depends on how the numbers are represented. If they are represented in some finite-precision float-point format, a simple regression where both weights are one would solve the problem. But that's not what I mean here. What I mean is, given the symbolic representation of numbers (i.e., each number is a sequence of digits), how could a machine learn to sum them up?
 
 There have been research projects in this realm, but the results are far from satisfactory and none of them can produce a machine that can sum up two numbers of arbitrary length. In this blog I want to offer an alternative view of this problem by dichotomizing learning into individual learning and evolutionary learning. Then, I provide an initial thought on the possibility of a new learning paradigm that is inspired not only from how each of us learns, but also how knowledge is formed during the entire human evolutionary process.
 
