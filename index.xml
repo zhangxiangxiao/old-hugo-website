@@ -5,8 +5,30 @@
     <link>http://xzh.me/</link>
     <description>Recent content on Xiang Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 23 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://xzh.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Common Sense: Unsupervised Learning or Machine Evolution?</title>
+      <link>http://xzh.me/posts/commonsense/</link>
+      <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://xzh.me/posts/commonsense/</guid>
+      <description>&lt;p&gt;Today I saw a post from Mark Zuckerberg on his project of automating a home. That great project is so awesome that it could probably change the future of human living. Along with the post there are arguments that common sense may be obtained through unsupervised learning. But personally I do not buy these arguments, at least not in the current form of unsupervised learning.&lt;/p&gt;
+
+&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &#34;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.3&#34;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/zuck/posts/10102620559534481&#34; data-width=&#34;500&#34;&gt;&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;blockquote cite=&#34;https://www.facebook.com/zuck/posts/10102620559534481&#34;&gt;&lt;p&gt;My personal challenge for 2016 is to build a simple AI -- like Jarvis from Iron Man -- to help run my home and help me...&lt;/p&gt;Posted by &lt;a href=&#34;https://www.facebook.com/zuck&#34;&gt;Mark Zuckerberg&lt;/a&gt; on&amp;nbsp;&lt;a href=&#34;https://www.facebook.com/zuck/posts/10102620559534481&#34;&gt;Wednesday, January 27, 2016&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The intuition that a model can obtain common sense through unsupervised process is not straightforward to me. If that intuition came from how we human beings obtain common sense, a large portion of it came from a well-designed and strongly-supervised form of teaching and learning in school. Even prior to school, we learn via a feedback process with the world we interact, and at the same time under a strongly-supervised &amp;lsquo;protection&amp;rsquo; from our parents. There are many many different feedback signals available to us.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, if we think about the entire knowledge of human race, common sense seems to come unsupervisedly in the sense that we generate it via thousands years of evolution. But again that relies on the fact that the human race is not a single individual &amp;ndash; it consists of many many individuals and only through this complicated dynamic system we form what we today call common sense. Therefore it seems to miss the point to ask a single unsupervised model to generate all of common sense.&lt;/p&gt;
+
+&lt;p&gt;However, I also feel that this seemingly unsupervised process of evolution is not feedback-free. Any living creature had to strive for maintain its low-entropy state (a structured state constituting of cells and their internal orderly structure), and release high-entropy waste to the environment via metabolism. Massive energy is used by such a creature during the process. It is through the will of better maintaining this low-entropy state that we evolve. Of course, machines do not have to do this, they just have to make &amp;lsquo;surving humans&amp;rsquo; as their ultimate goal.&lt;/p&gt;
+
+&lt;p&gt;But the question is, how do we design a race of machines such that they can evolve to better surve us? And if this is possible, will the evolving machine population generate things similar to the phenomenon of &amp;lsquo;common sense&amp;rsquo;?&lt;/p&gt;
+
+&lt;p&gt;P.S. Ultimately I feel it is meaningless to argue about whether something is supervised or unsupervised. In current form of machine learning one always needs to do optimization, therefore one needs to design an objective. We can always argue that the objective is a kind of supervised signal. The mindset of labeling something as &amp;lsquo;unsupervised&amp;rsquo; more or less misled us to think less about the mechanism of how some intelligent really phenonmena happened.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Evolve to Sum</title>
