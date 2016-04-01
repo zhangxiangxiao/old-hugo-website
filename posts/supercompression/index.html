@@ -7,8 +7,8 @@
 <head>
     <meta charset="utf-8">
     <base href="http://xzh.me">
-    <title> Common Sense: Unsupervised Learning or Machine Evolution? </title>
-    <link rel="canonical" href="http://xzh.me/posts/commonsense/">
+    <title> The Super Compression Algorithm </title>
+    <link rel="canonical" href="http://xzh.me/posts/supercompression/">
     
 
 <link rel="stylesheet" href="/css/poole.css">
@@ -62,32 +62,50 @@
 
     
     <div class="container content">
-      <h1 class="post-title">Common Sense: Unsupervised Learning or Machine Evolution?</h1>
+      <h1 class="post-title">The Super Compression Algorithm</h1>
       
       <div class="addthis_sharing_toolbox" style="text-align:right;"></div>
         <section id="main">
-          <h5 id="date"> Thu Jan 28, 2016 </h5>
-          <p>Today I saw a <a href="https://www.facebook.com/zuck/posts/10102620559534481">post from Mark Zuckerberg on his project of automating a home</a>. That great project is so awesome that it could probably change the future of human living. Along with the post there are arguments that common sense may be obtained through unsupervised learning. But personally I do not buy these arguments, at least not in the current form of unsupervised learning.</p>
+          <h5 id="date"> Fri Apr 1, 2016 </h5>
+          
 
-<p>The intuition that a model can obtain common sense through unsupervised process is not straightforward to me. If that intuition came from how we human beings obtain common sense, a large portion of it came from a well-designed and strongly-supervised form of teaching and learning in school. Even prior to school, we learn via a feedback process with the world we interact, and at the same time under a strongly-supervised &lsquo;protection&rsquo; from our parents. There are many many different feedback signals available to us.</p>
+<p>In this blog I am opening up about my super lossless compression algorithm that I have been using for everything. It basically compresses arbitrary binary sequences into a 64-bit <a href="http://grouper.ieee.org/groups/754">IEEE 754 double-precision binary floating-pointer format</a> without loosing any information. I also show mathematical proof that this algorithm has guaranteed compression properties. The decision of opening this algorithm is made after I have filed a <a href="http://www.uspto.gov/patents-getting-started/patent-basics/types-patent-applications/provisional-application-patent">provisional application for patent</a> in the USPTO.</p>
 
-<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/zuck/posts/10102620559534481"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/zuck/posts/10102620559534481"><p>My personal challenge for 2016 is to build a simple AI -- like Jarvis from Iron Man -- to help run my home and help me...</p>Posted by <a href="https://www.facebook.com/zuck">Mark Zuckerberg</a> on&nbsp;<a href="https://www.facebook.com/zuck/posts/10102620559534481">Wednesday, January 27, 2016</a></blockquote></div></div>
+<h3 id="the-super-lossless-compression-algorithm:49ac84aac7b20c892915d4b7fbd991f2">The Super Lossless Compression Algorithm</h3>
 
-<p>On the other hand, if we think about the entire knowledge of human race, common sense seems to come unsupervisedly in the sense that we generate it via thousands years of evolution. But again that relies on the fact that the human race is not a single individual &ndash; it consists of many many individuals and only through this complicated dynamic system we form what we today call common sense. Therefore it seems to miss the point to ask a single unsupervised model to generate all of common sense.</p>
+<p>The algorithm is perhaps best shown in a mathematic formula. Define constant <code>\(s_0 = 1\)</code> and <code>\(s_1 = -1\)</code>. Given a sequence of binary numbers <code>\(a_1, a_2, \dots, a_l\)</code> of length <code>\(l\)</code> (<code>\(a_i \in \{0,1\}\)</code>), we can encode it in reverse order using the following recurrence</p>
 
-<p>However, I also feel that this seemingly unsupervised process of evolution is not feedback-free. Any living creature had to strive for maintain its low-entropy state (a structured state constituting of cells and their internal orderly structure), and release high-entropy waste to the environment via metabolism. Massive energy is used by such a creature during the process. It is through the will of better maintaining this low-entropy state that we evolve. Of course, machines do not have to do this, they just have to make &lsquo;surving humans&rsquo; as their ultimate goal.</p>
+<div>\begin{equation}
+y_i = \frac{2}{3} y_{i+1} + \frac{1}{3} s_{a_i},
+\end{equation}</div>
 
-<p>But the question is, how do we design a race of machines such that they can evolve to better surve us? And if this is possible, will the evolving machine population generate things similar to the phenomenon of &lsquo;common sense&rsquo;?</p>
+<p>where <code>\(y_{l+1} = 0\)</code> and <code>\(i\)</code> goes from <code>\(l\)</code> to <code>\(1\)</code>. The number <code>\(y_1\)</code> is the result we get. To get back to the sequence, we simply decode $y_1$ in a recurrence as well</p>
 
-<p>P.S. Ultimately I feel it is meaningless to argue about whether something is supervised or unsupervised. In current form of machine learning one always needs to do optimization, therefore one needs to design an objective. We can always argue that the objective is a kind of supervised signal. The mindset of labeling something as &lsquo;unsupervised&rsquo; more or less misled us to think less about the mechanism of how some intelligent phenonmena really happened.</p>
+<div>\begin{equation}
+y_i = \frac{3}{2}  \left( y_{i-1}  - \frac{1}{3} s_{a_i} \right),
+\end{equation}</div>
+
+<p>where <code>\(i\)</code> goes from <code>2</code> to <code>l</code>. Note that this equation reconstruct the values of the first equation, but order is reversed between them. The sequence itself is decoded by the simple rule that <code>\(a_i = 0\)</code> if <code>\(y_i &lt; 0\)</code> and <code>\(a_i = 1\)</code> if <code>\(y_i &gt; 0\)</code>.</p>
+
+<p>The proof of this is pretty simple, but I will just describe the gist here briefly in English. Essentially, the rule says to choose <code>\(a_i\)</code> such that <code>\(s_i y_i &gt; 0\)</code>. This is true by our recurrence encoding formula, knowing that <code>\(y_l = 0\)</code> and <code>\(|y_{i+1}| &lt; 1\)</code>. The fact that <code>\(|y_{i+1}| &lt; 1\)</code> is because the encoding formula is a running average of <code>\(y_i\)</code> with two weights sum to <code>\(1\)</code> and <code>\(|s_{a_i}| = 1\)</code>.</p>
+
+<h3 id="numerical-stability-analysis:49ac84aac7b20c892915d4b7fbd991f2">Numerical Stability Analysis</h3>
+
+<h3 id="encoding-arbitrary-length-data:49ac84aac7b20c892915d4b7fbd991f2">Encoding Arbitrary Length Data</h3>
+
+<h3 id="sample-implementation:49ac84aac7b20c892915d4b7fbd991f2">Sample Implementation</h3>
+
+<div>
+<!-- 01000001011100000111001001101001011011000010000001000110011011110110111101101100 is the ASCII code of "April Fool" in binary. -->
+</div>
 
         </section>
 	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'xiangzhang';
-    var disqus_identifier = 'http:\/\/xzh.me\/posts\/commonsense\/';
-    var disqus_title = 'Common Sense: Unsupervised Learning or Machine Evolution?';
-    var disqus_url = 'http:\/\/xzh.me\/posts\/commonsense\/';
+    var disqus_identifier = 'http:\/\/xzh.me\/posts\/supercompression\/';
+    var disqus_title = 'The Super Compression Algorithm';
+    var disqus_url = 'http:\/\/xzh.me\/posts\/supercompression\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -111,7 +129,7 @@
 
   
     <span class="right">
-    <em>Next: </em><a class="next" href="http://xzh.me/posts/evolvetosum/"> &nbsp; Evolve to Sum</a> &raquo;
+    <em>Next: </em><a class="next" href="http://xzh.me/posts/commonsense/"> &nbsp; Common Sense: Unsupervised Learning or Machine Evolution?</a> &raquo;
     </span>
   
 </div>
@@ -121,10 +139,6 @@
 <div class="container">
   <ul class="catlist">
     <li><em>Categories: </em></li>
-    
-      <li><a href="/categories/intelligence">intelligence</a> </li>
-    
-      <li><a href="/categories/deep-learning">deep learning</a> </li>
     
       <li><a href="/categories/research">research</a> </li>
     
