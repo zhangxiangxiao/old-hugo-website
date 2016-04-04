@@ -155,13 +155,6 @@ code {
   background-color: #f9f9f9;
   border-radius: 3px;
 }
-code.has-jax {
-    font: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-    color: #515151;
-}
 pre {
   display: block;
   margin-top: 0;
@@ -185,6 +178,13 @@ pre code {
 }
 .highlight pre {
   margin-bottom: 0;
+}
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
 }
 
 /* Quotes */
