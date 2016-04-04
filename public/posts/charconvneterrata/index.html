@@ -71,6 +71,7 @@
 
 <ul>
 <li>The upper index for the convolution and max-pooling module should be <code>\( \lfloor (l-k)/d \rfloor + 1 \)</code> instead of <code>\( \lfloor (l-k+1)/d \rfloor \)</code>.</li>
+<li>The alphabet contains a duplicate minus/hyphen character. In our experiments, the character quantization process ends up always using the last minus/hyphen character index. This means that the network will never see one of the duplicated characters and the first layer weights associated with it do not contribute to the features to the next layer. Therefore, it would not affect the validity of the network in any way. See <a href="https://github.com/zhangxiangxiao/Crepe/issues/4">this issue on github</a> for more information.</li>
 </ul>
 
         </section>
