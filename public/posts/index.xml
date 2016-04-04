@@ -5,8 +5,22 @@
     <link>http://xzh.me/posts/</link>
     <description>Recent content in Posts on Xiang Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://xzh.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Errata for Character-level Convolutional Networks for Text Classification</title>
+      <link>http://xzh.me/posts/charconvneterrata/</link>
+      <pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://xzh.me/posts/charconvneterrata/</guid>
+      <description>&lt;p&gt;This page contains errata for the paper &amp;ldquo;Xiang Zhang, Junbo Zhao, Yann LeCun. &lt;a href=&#34;http://arxiv.org/abs/1509.01626&#34;&gt;Character-level Convolutional Networks for Text Classification&lt;/a&gt;. Advances in Neural Information Processing Systems 28 (NIPS 2015)&amp;ldquo;. The &lt;a href=&#34;http://arxiv.org/abs/1509.01626&#34;&gt;paper on arXiv server&lt;/a&gt; will be updated accordingly, but the &lt;a href=&#34;http://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification&#34;&gt;paper in NIPS proceedings&lt;/a&gt; may stay as is. Some of the errata may also apply to our earlier technical report &amp;ldquo;Xiang Zhang, Yann LeCun. &lt;a href=&#34;http://arxiv.org/abs/1502.01710&#34;&gt;Text Understanding from Scratch&lt;/a&gt;. arXiv 1502.01710.&amp;rdquo;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The upper index for the convolution and max-pooling module should be &lt;code&gt;\( \lfloor (l-k)/d \rfloor + 1 \)&lt;/code&gt; instead of &lt;code&gt;\( \lfloor (l-k+1)/d \rfloor \)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Common Sense: Unsupervised Learning or Machine Evolution?</title>

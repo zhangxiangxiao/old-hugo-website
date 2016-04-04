@@ -7,8 +7,8 @@
 <head>
     <meta charset="utf-8">
     <base href="http://xzh.me">
-    <title> Categories </title>
-    <link rel="canonical" href="http://xzh.me/categories/">
+    <title> Errata for Character-level Convolutional Networks for Text Classification </title>
+    <link rel="canonical" href="http://xzh.me/posts/charconvneterrata/">
     
 
 <link rel="stylesheet" href="/css/poole.css">
@@ -19,7 +19,10 @@
 </head>
 
 
-<body class="theme-base-08">
+<body class="theme-base-0d">
+  
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5537b54655524ca3" async="async"></script>
+
   
 
 
@@ -59,27 +62,64 @@
 
     
     <div class="container content">
+      <h1 class="post-title">Errata for Character-level Convolutional Networks for Text Classification</h1>
+      
+      <div class="addthis_sharing_toolbox" style="text-align:right;"></div>
         <section id="main">
-          <div>
-            <h1>Archive of Posts, by category</h1>
-            <ul class="category">
-              
-              
-              <li><a href="/categories/research"> research </a> (4 entries) </li>
-              
-              <li><a href="/categories/intelligence"> intelligence </a> (4 entries) </li>
-              
-              <li><a href="/categories/deep-learning"> deep-learning </a> (4 entries) </li>
-              
-              <li><a href="/categories/book"> book </a> (1 entries) </li>
-              
-            </ul>
-          </div>
+          <h5 id="date"> Sun Apr 3, 2016 </h5>
+          <p>This page contains errata for the paper &ldquo;Xiang Zhang, Junbo Zhao, Yann LeCun. <a href="http://arxiv.org/abs/1509.01626">Character-level Convolutional Networks for Text Classification</a>. Advances in Neural Information Processing Systems 28 (NIPS 2015)&ldquo;. The <a href="http://arxiv.org/abs/1509.01626">paper on arXiv server</a> will be updated accordingly, but the <a href="http://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification">paper in NIPS proceedings</a> may stay as is. Some of the errata may also apply to our earlier technical report &ldquo;Xiang Zhang, Yann LeCun. <a href="http://arxiv.org/abs/1502.01710">Text Understanding from Scratch</a>. arXiv 1502.01710.&rdquo;</p>
+
+<ul>
+<li>The upper index for the convolution and max-pooling module should be <code>\( \lfloor (l-k)/d \rfloor + 1 \)</code> instead of <code>\( \lfloor (l-k+1)/d \rfloor \)</code>.</li>
+</ul>
+
         </section>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'xiangzhang';
+    var disqus_identifier = 'http:\/\/xzh.me\/posts\/charconvneterrata\/';
+    var disqus_title = 'Errata for Character-level Convolutional Networks for Text Classification';
+    var disqus_url = 'http:\/\/xzh.me\/posts\/charconvneterrata\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
   </div>
 
   <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  
+
+<div class="container">
+  <hr />
+  <hr />
+  
+
+  
+    <span class="right">
+    <em>Next: </em><a class="next" href="http://xzh.me/posts/commonsense/"> &nbsp; Common Sense: Unsupervised Learning or Machine Evolution?</a> &raquo;
+    </span>
+  
+</div>
+
+  <br />
+  
+<div class="container">
+  <ul class="catlist">
+    <li><em>Categories: </em></li>
+    
+      <li><a href="/categories/research">research</a> </li>
+    
+  </ul>
+</div>
+
+
 
   
   
