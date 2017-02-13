@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://xzh.me/</loc>
-    <lastmod>2016-04-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://xzh.me/posts/charconvneterrata/</loc>
     <lastmod>2016-04-03T00:00:00+00:00</lastmod>
   </url>
@@ -45,6 +39,47 @@
   <url>
     <loc>http://xzh.me/posts/deeplearninglandscape/</loc>
     <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://xzh.me/categories/book/</loc>
+    <lastmod>2015-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xzh.me/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xzh.me/categories/deep-learning/</loc>
+    <lastmod>2016-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xzh.me/categories/intelligence/</loc>
+    <lastmod>2016-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xzh.me/posts/</loc>
+    <lastmod>2016-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xzh.me/categories/research/</loc>
+    <lastmod>2016-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xzh.me/</loc>
+    <lastmod>2016-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

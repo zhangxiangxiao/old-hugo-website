@@ -2,10 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Xiang Zhang</title>
-    <link>http://xzh.me/categories/research/</link>
+    <link>http://xzh.me/categories/research/index.xml</link>
     <description>Recent content in Research on Xiang Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 03 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://xzh.me/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -57,7 +56,7 @@
 
 &lt;p&gt;There have been research projects in this realm, but the results are far from satisfactory and none of them can produce a machine that can sum up two numbers of arbitrary length. In this blog I want to offer an alternative view of this problem by dichotomizing learning into individual learning and evolutionary learning. Then, I provide an initial thought on the possibility of a new learning paradigm that is inspired not only from how each of us learns, but also how knowledge is formed during the entire human evolutionary process.&lt;/p&gt;
 
-&lt;h3 id=&#34;learning-to-sum:f4c76188421e5843dda1963eace05e1c&#34;&gt;Learning to Sum&lt;/h3&gt;
+&lt;h3 id=&#34;learning-to-sum&#34;&gt;Learning to Sum&lt;/h3&gt;
 
 &lt;p&gt;Yesterday I was invited to &lt;a href=&#34;https://www.zhihu.com/question/39727411/answer/82778981&#34;&gt;answer a question on Zhihu&lt;/a&gt;, a Chinese equivalent of Quora, about whether deep learning models can be used to learn to sum. Immediately I thought that the question is actually more difficult to answer than it appears to be, partly because it is always easier to disprove the possibility of something than to prove it.&lt;/p&gt;
 
@@ -69,7 +68,7 @@
 
 &lt;p&gt;The discussion above also hints on one problem of current generation deep learning research. The learning paradigm we used to design models is unexceptionally individual learning. One may argue that there is some aspect of deep learning models which implements some of evolution&amp;rsquo;s achievements &amp;ndash; such as convolutional network implements an analogy of our visual cortex (not the eye &amp;ndash; the eye is analogized by a camera). But this is only a slighly blurred line between individual learning and evolutionary learning. It is apparently impossible for evolution to be responsible for every part of the visual system &amp;ndash; maybe some lower layers that detect edges, but definitely not the upper layers where we form concepts and classification of objects. It does not disprove the necessity of a evolutionary learning paradigm.&lt;/p&gt;
 
-&lt;h3 id=&#34;evolve-to-sum:f4c76188421e5843dda1963eace05e1c&#34;&gt;Evolve to Sum&lt;/h3&gt;
+&lt;h3 id=&#34;evolve-to-sum&#34;&gt;Evolve to Sum&lt;/h3&gt;
 
 &lt;p&gt;Summation and other arithmetic operations are not the only things that evolutionary learning models. Common sense, culture, art and language &amp;ndash; traditionally hard to model by connectionist ideas &amp;ndash; could also be thought of as by-products of human evolution. If we have a way to let machines to evolve themselves, it may generate its own common sense, culture and art. This is not at all what evolutionary algorithm is about &amp;ndash; we are talking about evolution of models in a more literal sense.&lt;/p&gt;
 
@@ -108,7 +107,7 @@
 
 &lt;p&gt;I apologize for any inconvenience and inaccurate information resulted from this. I am aware that this technical report drew a lot of attention from fellow researchers all around the world, and I will do my best to resolve the issues as soon as possible.&lt;/p&gt;
 
-&lt;h3 id=&#34;what-are-the-issues:6d4327301e838a9c8bdd4a7eb0a3f227&#34;&gt;What are the issues?&lt;/h3&gt;
+&lt;h3 id=&#34;what-are-the-issues&#34;&gt;What are the issues?&lt;/h3&gt;
 
 &lt;p&gt;As said before, the issues are multiple instances of the same sample, and overlaps between training and testing data. I am still investigating the reasons behind these issues, but so far it looks like there were duplications from the datasets&amp;rsquo; original owners and distributors. Below is a break down of the issues for the datasets in the original technical report.&lt;/p&gt;
 
@@ -162,7 +161,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;is-the-crepe-code-affected:6d4327301e838a9c8bdd4a7eb0a3f227&#34;&gt;Is the Crepe code affected?&lt;/h3&gt;
+&lt;h3 id=&#34;is-the-crepe-code-affected&#34;&gt;Is the Crepe code affected?&lt;/h3&gt;
 
 &lt;p&gt;The release of &lt;a href=&#34;https://github.com/zhangxiangxiao/Crepe&#34;&gt;Crepe&lt;/a&gt; is idependent of the datasets. It is currently not affected by this issue. Also, because the DBPedia dataset is clean, the example usage for Crepe is still totally valid. The DBPedia dataset is kept online.&lt;/p&gt;
 
