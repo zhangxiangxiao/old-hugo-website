@@ -2,10 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intelligence on Xiang Zhang</title>
-    <link>http://xzh.me/categories/intelligence/</link>
+    <link>http://xzh.me/categories/intelligence/index.xml</link>
     <description>Recent content in Intelligence on Xiang Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Jan 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://xzh.me/categories/intelligence/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -42,7 +41,7 @@
 
 &lt;p&gt;There have been research projects in this realm, but the results are far from satisfactory and none of them can produce a machine that can sum up two numbers of arbitrary length. In this blog I want to offer an alternative view of this problem by dichotomizing learning into individual learning and evolutionary learning. Then, I provide an initial thought on the possibility of a new learning paradigm that is inspired not only from how each of us learns, but also how knowledge is formed during the entire human evolutionary process.&lt;/p&gt;
 
-&lt;h3 id=&#34;learning-to-sum:f4c76188421e5843dda1963eace05e1c&#34;&gt;Learning to Sum&lt;/h3&gt;
+&lt;h3 id=&#34;learning-to-sum&#34;&gt;Learning to Sum&lt;/h3&gt;
 
 &lt;p&gt;Yesterday I was invited to &lt;a href=&#34;https://www.zhihu.com/question/39727411/answer/82778981&#34;&gt;answer a question on Zhihu&lt;/a&gt;, a Chinese equivalent of Quora, about whether deep learning models can be used to learn to sum. Immediately I thought that the question is actually more difficult to answer than it appears to be, partly because it is always easier to disprove the possibility of something than to prove it.&lt;/p&gt;
 
@@ -54,7 +53,7 @@
 
 &lt;p&gt;The discussion above also hints on one problem of current generation deep learning research. The learning paradigm we used to design models is unexceptionally individual learning. One may argue that there is some aspect of deep learning models which implements some of evolution&amp;rsquo;s achievements &amp;ndash; such as convolutional network implements an analogy of our visual cortex (not the eye &amp;ndash; the eye is analogized by a camera). But this is only a slighly blurred line between individual learning and evolutionary learning. It is apparently impossible for evolution to be responsible for every part of the visual system &amp;ndash; maybe some lower layers that detect edges, but definitely not the upper layers where we form concepts and classification of objects. It does not disprove the necessity of a evolutionary learning paradigm.&lt;/p&gt;
 
-&lt;h3 id=&#34;evolve-to-sum:f4c76188421e5843dda1963eace05e1c&#34;&gt;Evolve to Sum&lt;/h3&gt;
+&lt;h3 id=&#34;evolve-to-sum&#34;&gt;Evolve to Sum&lt;/h3&gt;
 
 &lt;p&gt;Summation and other arithmetic operations are not the only things that evolutionary learning models. Common sense, culture, art and language &amp;ndash; traditionally hard to model by connectionist ideas &amp;ndash; could also be thought of as by-products of human evolution. If we have a way to let machines to evolve themselves, it may generate its own common sense, culture and art. This is not at all what evolutionary algorithm is about &amp;ndash; we are talking about evolution of models in a more literal sense.&lt;/p&gt;
 
@@ -104,7 +103,7 @@
 
 &lt;p&gt;Medical study shows that two consciousness could exist in the same body, if the connection between the left and the right brain hemispheres are damaged. Does this medical fact tells us something more about intelligence? My opinion is, it is an evidence for the hypothesis that certain deficiency in low-level communication is a precondition for intelligence. I know that sounds crazy or perhaps hard to understand, but please allow me to explain.&lt;/p&gt;
 
-&lt;h3 id=&#34;a-different-understanding-of-alien-hand-syndrome:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;A Different Understanding of Alien Hand Syndrome&lt;/h3&gt;
+&lt;h3 id=&#34;a-different-understanding-of-alien-hand-syndrome&#34;&gt;A Different Understanding of Alien Hand Syndrome&lt;/h3&gt;
 
 &lt;p&gt;This Friday night I was watching the rather dramatized and thrilling episodes of &amp;ldquo;Dark Matters: Twisted But True&amp;rdquo;. In episode 4 of season 1, there is a story about alien hand syndrome, a rare neurological disorder that causes hand movement without the person being aware of what is happening or having control over the action. In the story, a woman&amp;rsquo;s left hand tried to kill herself without her being able to control it. After some thrilling mood rendering, it was revealed that her brain had some permanent damage resulted from a stroke prior to the syndrome. The problem was that the connection between her brain&amp;rsquo;s left and right hemispheres was broken, and it created two consciousness in the same body.&lt;/p&gt;
 
@@ -118,7 +117,7 @@
 
 &lt;p&gt;One can debate the causation fallacy above endlessly untill some experiments can be done to prove one and disprove the other. But before that, I will assume the second theory is true throughout the rest of the blog.&lt;/p&gt;
 
-&lt;h3 id=&#34;communication-not-as-a-part-of-intelligence:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;Communication (not?) as a Part of Intelligence&lt;/h3&gt;
+&lt;h3 id=&#34;communication-not-as-a-part-of-intelligence&#34;&gt;Communication (not?) as a Part of Intelligence&lt;/h3&gt;
 
 &lt;p&gt;The focus of the split-brain phenomenon rests on the connection between left and right hemispheres. If the connection is broken, then one can easily see signs of two consciousness. This means that to be a coherent intelligent entity, the place in which consciousness exists (in this case the brain) must have proper physical connection inside its every component. The necessity of such connection suggests that communication is a crucial part for intelligence.&lt;/p&gt;
 
@@ -130,7 +129,7 @@
 
 &lt;p&gt;All the above discussions are about high-level communication. I think that people can argue endlessly about whether high-level communication is a necessity for intelligence, and I just gave one example above. On the other hand, the question that whether low-level communication is necessary for intelligence is not an ambiguous question in my opinion, especially for the boundary of something being one or multiple intelligent entity. This is already proved by the alient hand syndrome mentioned in the previous section &amp;ndash; low-level communication is a necessity.&lt;/p&gt;
 
-&lt;h3 id=&#34;one-precondition-for-intelligence:45530e5fe76f4db5de7bc9f517c17a55&#34;&gt;One Precondition for Intelligence&lt;/h3&gt;
+&lt;h3 id=&#34;one-precondition-for-intelligence&#34;&gt;One Precondition for Intelligence&lt;/h3&gt;
 
 &lt;p&gt;Of course, being intelligent alone seems very meaningless. The meaning of being intelligent, at least in the sense for humans, partially rests in the fact that we can communicate with other intelligent entities. On the other hand, if Turing&amp;rsquo;s definition on intelligence is correct, then to decide whether some machine is intelligence at least two other intelligent entities must present &amp;ndash; one to be immitated and the other the judge. Combining with out previous discussion on high-level and low-evel communication, this seemingly boring reasoning gives us a quite striking conclusion: one necessity for the existence of intelligence is that there must be certain deficiency in low-level communication.&lt;/p&gt;
 
