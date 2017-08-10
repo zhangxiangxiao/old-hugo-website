@@ -2,11 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Xiang Zhang</title>
-    <link>http://xzh.me/posts/index.xml</link>
+    <link>http://xzh.me/posts/</link>
     <description>Recent content in Posts on Xiang Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 03 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://xzh.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://xzh.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Errata for Character-level Convolutional Networks for Text Classification</title>
@@ -14,13 +16,8 @@
       <pubDate>Sun, 03 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/charconvneterrata/</guid>
-      <description>&lt;p&gt;This page contains errata for the paper &amp;ldquo;Xiang Zhang, Junbo Zhao, Yann LeCun. &lt;a href=&#34;http://arxiv.org/abs/1509.01626&#34;&gt;Character-level Convolutional Networks for Text Classification&lt;/a&gt;. Advances in Neural Information Processing Systems 28 (NIPS 2015)&amp;ldquo;. The &lt;a href=&#34;http://arxiv.org/abs/1509.01626&#34;&gt;paper on arXiv server&lt;/a&gt; will be updated accordingly, but the &lt;a href=&#34;http://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification&#34;&gt;paper in NIPS proceedings&lt;/a&gt; may stay as is. Some of the errata may also apply to our earlier technical report &amp;ldquo;Xiang Zhang, Yann LeCun. &lt;a href=&#34;http://arxiv.org/abs/1502.01710&#34;&gt;Text Understanding from Scratch&lt;/a&gt;. arXiv 1502.01710.&amp;rdquo;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The upper index for the convolution and max-pooling module should be &lt;code&gt;\( \lfloor (l-k)/d \rfloor + 1 \)&lt;/code&gt; instead of &lt;code&gt;\( \lfloor (l-k+1)/d \rfloor \)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;The alphabet contains a duplicate minus/hyphen character. In our experiments, the character quantization process ends up always using the last minus/hyphen character index. This means that the network will never see one of the duplicated characters and the first layer weights associated with it do not contribute to the features to the next layer. Therefore, it would not affect the validity of the experiments. See &lt;a href=&#34;https://github.com/zhangxiangxiao/Crepe/issues/4&#34;&gt;this issue on github&lt;/a&gt; for more information.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>This page contains errata for the paper &amp;ldquo;Xiang Zhang, Junbo Zhao, Yann LeCun. Character-level Convolutional Networks for Text Classification. Advances in Neural Information Processing Systems 28 (NIPS 2015)&amp;ldquo;. The paper on arXiv server will be updated accordingly, but the paper in NIPS proceedings may stay as is. Some of the errata may also apply to our earlier technical report &amp;ldquo;Xiang Zhang, Yann LeCun. Text Understanding from Scratch. arXiv 1502.01710.&amp;rdquo;
+ The upper index for the convolution and max-pooling module should be \( \lfloor (l-k)/d \rfloor + 1 \) instead of \( \lfloor (l-k+1)/d \rfloor \).</description>
     </item>
     
     <item>
@@ -29,20 +26,8 @@
       <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/commonsense/</guid>
-      <description>&lt;p&gt;Today I saw a &lt;a href=&#34;https://www.facebook.com/zuck/posts/10102620559534481&#34;&gt;post from Mark Zuckerberg on his project of automating a home&lt;/a&gt;. That great project is so awesome that it could probably change the future of human living. Along with the post there are arguments that common sense may be obtained through unsupervised learning. But personally I do not buy these arguments, at least not in the current form of unsupervised learning.&lt;/p&gt;
-
-&lt;p&gt;The intuition that a model can obtain common sense through unsupervised process is not straightforward to me. If that intuition came from how we human beings obtain common sense, a large portion of it came from a well-designed and strongly-supervised form of teaching and learning in school. Even prior to school, we learn via a feedback process with the world we interact, and at the same time under a strongly-supervised &amp;lsquo;protection&amp;rsquo; from our parents. There are many many different feedback signals available to us.&lt;/p&gt;
-
-&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &#34;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.3&#34;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/zuck/posts/10102620559534481&#34;&gt;&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;blockquote cite=&#34;https://www.facebook.com/zuck/posts/10102620559534481&#34;&gt;&lt;p&gt;My personal challenge for 2016 is to build a simple AI -- like Jarvis from Iron Man -- to help run my home and help me...&lt;/p&gt;Posted by &lt;a href=&#34;https://www.facebook.com/zuck&#34;&gt;Mark Zuckerberg&lt;/a&gt; on&amp;nbsp;&lt;a href=&#34;https://www.facebook.com/zuck/posts/10102620559534481&#34;&gt;Wednesday, January 27, 2016&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;On the other hand, if we think about the entire knowledge of human race, common sense seems to come unsupervisedly in the sense that we generate it via thousands years of evolution. But again that relies on the fact that the human race is not a single individual &amp;ndash; it consists of many many individuals and only through this complicated dynamic system we form what we today call common sense. Therefore it seems to miss the point to ask a single unsupervised model to generate all of common sense.&lt;/p&gt;
-
-&lt;p&gt;However, I also feel that this seemingly unsupervised process of evolution is not feedback-free. Any living creature had to strive for maintain its low-entropy state (a structured state constituting of cells and their internal orderly structure), and release high-entropy waste to the environment via metabolism. Massive energy is used by such a creature during the process. It is through the will of better maintaining this low-entropy state that we evolve. Of course, machines do not have to do this, they just have to make &amp;lsquo;surving humans&amp;rsquo; as their ultimate goal.&lt;/p&gt;
-
-&lt;p&gt;But the question is, how do we design a race of machines such that they can evolve to better surve us? And if this is possible, will the evolving machine population generate things similar to the phenomenon of &amp;lsquo;common sense&amp;rsquo;?&lt;/p&gt;
-
-&lt;p&gt;P.S. Ultimately I feel it is meaningless to argue about whether something is supervised or unsupervised. In current form of machine learning one always needs to do optimization, therefore one needs to design an objective. We can always argue that the objective is a kind of supervised signal. The mindset of labeling something as &amp;lsquo;unsupervised&amp;rsquo; more or less misled us to think less about the mechanism of how some intelligent phenonmena really happened.&lt;/p&gt;
-</description>
+      <description>Today I saw a post from Mark Zuckerberg on his project of automating a home. That great project is so awesome that it could probably change the future of human living. Along with the post there are arguments that common sense may be obtained through unsupervised learning. But personally I do not buy these arguments, at least not in the current form of unsupervised learning.
+The intuition that a model can obtain common sense through unsupervised process is not straightforward to me.</description>
     </item>
     
     <item>
@@ -51,36 +36,7 @@
       <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/evolvetosum/</guid>
-      <description>
-
-&lt;p&gt;Here is one simple question: how to make machines learn to sum up two numbers? Of course, this problem largely depends on how the numbers are represented. If they are represented in some finite-precision float-point format, a simple regression where both weights are one would solve the problem. But that&amp;rsquo;s not what I mean here. What I mean is, given the symbolic representation of numbers (i.e., each number is a sequence of digits), how could a machine learn to sum them up?&lt;/p&gt;
-
-&lt;p&gt;There have been research projects in this realm, but the results are far from satisfactory and none of them can produce a machine that can sum up two numbers of arbitrary length. In this blog I want to offer an alternative view of this problem by dichotomizing learning into individual learning and evolutionary learning. Then, I provide an initial thought on the possibility of a new learning paradigm that is inspired not only from how each of us learns, but also how knowledge is formed during the entire human evolutionary process.&lt;/p&gt;
-
-&lt;h3 id=&#34;learning-to-sum&#34;&gt;Learning to Sum&lt;/h3&gt;
-
-&lt;p&gt;Yesterday I was invited to &lt;a href=&#34;https://www.zhihu.com/question/39727411/answer/82778981&#34;&gt;answer a question on Zhihu&lt;/a&gt;, a Chinese equivalent of Quora, about whether deep learning models can be used to learn to sum. Immediately I thought that the question is actually more difficult to answer than it appears to be, partly because it is always easier to disprove the possibility of something than to prove it.&lt;/p&gt;
-
-&lt;p&gt;Knowing that we have very limited results in learning arithmetic operations, I started to recall a thought inspired by the book &amp;ldquo;Probably Approximately Correct: Nature’s Algorithms for Learning and Prospering in a Complex World&amp;rdquo;, written by Turing award laureate Leslie G. Valiant. The book is mainly about an analogy of the probably approximately correct (PAC) learning theory and the evolutionary process of human beings. But my thought is only tangentially related to this analogy. It is more about a limitation on the current connectionist machine learning paradigm in relation to the dichotomy of individual learning and evolutionay process.&lt;/p&gt;
-
-&lt;p&gt;It is better explained using the problem in question &amp;ndash; summation. The way each of us learns arithmetic operations such as summation is not quite what connectionist machine learning paradigm advocates &amp;ndash; end-to-end learning by showing result examples of two numbers summing together. Rather, we learn arithmetic operations via a strongly supervised process with the help of our math teachers in elementary school. When learning to sum, each of us were not only presented with examples of correct or incorrect sums, but also the proceeding steps of this arithmetic operation. If we were to train a deep learning model to do summation in this way, we would start with perhaps a simple recurrent neural net, design a process for this network to do summation, and train the network using samples of this process in a strongly supervised fashion. We can think of ourselves as the math teachers of this student recurrent neural network, teaching it not only right from wrong but also the steps to make it right.&lt;/p&gt;
-
-&lt;p&gt;What is missing in the learning process above is the question of where summation comes from, or even where the concept of numbers comes from. We can find inspiration of such questions in humans, but it would no longer be possible to think of it in the scope of each human individual. Rather, we would have to think of human race as a whole and find answers in its entire evolutionary process. The answer of such questions immediately becomes demystified in this way of thinking, in that the concept of numbers and the process of arithmetic comes from generations of historical human activities. First of all, there is necessity of counting because we have learnt to produce and store goods. That was the reason for the concept of numbers. Then, when human society is developed enough for each individual to produce extra goods than for himself, there comes trading. Arithmetic naturally becomes a necessity, and since then we started to dissemminate the correct way of doing arithmetic until there is education and we started to teach it generation by generation. The description here is an extremely condensed version, and a better storytellling can be found in &lt;a href=&#34;http://www.bbc.co.uk/programmes/b00dwf4f&#34;&gt;BBC&amp;rsquo;s documentary &amp;lsquo;The Story of Maths&amp;rsquo;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The discussion above also hints on one problem of current generation deep learning research. The learning paradigm we used to design models is unexceptionally individual learning. One may argue that there is some aspect of deep learning models which implements some of evolution&amp;rsquo;s achievements &amp;ndash; such as convolutional network implements an analogy of our visual cortex (not the eye &amp;ndash; the eye is analogized by a camera). But this is only a slighly blurred line between individual learning and evolutionary learning. It is apparently impossible for evolution to be responsible for every part of the visual system &amp;ndash; maybe some lower layers that detect edges, but definitely not the upper layers where we form concepts and classification of objects. It does not disprove the necessity of a evolutionary learning paradigm.&lt;/p&gt;
-
-&lt;h3 id=&#34;evolve-to-sum&#34;&gt;Evolve to Sum&lt;/h3&gt;
-
-&lt;p&gt;Summation and other arithmetic operations are not the only things that evolutionary learning models. Common sense, culture, art and language &amp;ndash; traditionally hard to model by connectionist ideas &amp;ndash; could also be thought of as by-products of human evolution. If we have a way to let machines to evolve themselves, it may generate its own common sense, culture and art. This is not at all what evolutionary algorithm is about &amp;ndash; we are talking about evolution of models in a more literal sense.&lt;/p&gt;
-
-&lt;p&gt;Admittedly, there are many problems that are unclear about an evolutionary learning process. The first one is whether there is an objective for machine evolution. I personally think that this is more about what the models should do rather than what is the optimization objective. Like human beings, the goal of a machine should be about survival in the world it exists. This suggests a different design principle for machines &amp;ndash; rather than to design machines to assist our daily lives, we would design machines that strive to surve themselves. It means we must equip machines with the ability of control its own survival needs. In the context of our current generation eletronic technology, one way to do this is probably equip it with the ability to plug itself into power outlets, at least mechanically. Then, we can use our current machine learning methods to let it learn how to get plugged with power in its software.&lt;/p&gt;
-
-&lt;p&gt;The second problem is how could machines reproduce, since only with reproduction we would have generations of machines to constitute the process of evolution. One cheap way to do this is probably take over reproduction ourselves. We can keep producing copies of such machines, and evolution becomes choosing the best surviving learning machines to initialize the new ones. When technology is advanced enough, there will probably be a time that one of the machine will learn to reproduce by themselves, but we probably would not want to give the machines such ability.&lt;/p&gt;
-
-&lt;p&gt;The last problem is what the software of such machines should look like. I believe it should consist of three parts: perception, reasoning and action. The perception part could be on vision or sound, and there are already many models in research for this. The reasoning part is relatively new, including perhaps the current trend on using embedding and memory techniques. As for the action part, there are at least two potential models &amp;ndash; recurrent neural networks and reinforcement learning. One attempts to model the past, and the other tries to predict the future reward.&lt;/p&gt;
-
-&lt;p&gt;Now, let&amp;rsquo;s go back to the question of learning to sum. How can we discover whether the machine can do sum? Well, I think the question is probably wrong. A better question is probably this: is computing summation a necessity for the evolution of machines?&lt;/p&gt;
-</description>
+      <description>Here is one simple question: how to make machines learn to sum up two numbers? Of course, this problem largely depends on how the numbers are represented. If they are represented in some finite-precision float-point format, a simple regression where both weights are one would solve the problem. But that&amp;rsquo;s not what I mean here. What I mean is, given the symbolic representation of numbers (i.e., each number is a sequence of digits), how could a machine learn to sum them up?</description>
     </item>
     
     <item>
@@ -89,24 +45,7 @@
       <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/emperorsnewmind/</guid>
-      <description>&lt;p&gt;Finally finished reading Roger Penrose&amp;rsquo;s classic book &amp;ldquo;The Emperor&amp;rsquo;s New Mind: Concerning Computers, Minds and The Laws of Physics&amp;rdquo;. As a junior Ph.D. student who hopes to have a career in the research of artificial intelligence (machine learning or deep learning more precisely), I was reading this book as a touch on the opposite of the belief that intelligence is achievable by machines. Apart from several of his dramatic tones towards mocking A.I. (what was that story in the pro- and epi-logue about?), this book has been a very enjoyable experience for me.&lt;/p&gt;
-
-&lt;p&gt;Roger Penrose is definitely one scientist that holds a very strong opinion on this opposite, and I do have to say that he is undoubtedly good at explaining his arguments. This book did a good job at disseminating a set of fundamental ideas from a physics perspective in relation to some very philosophical and mathematical issues. From my reading, there are two streams of ideas in the book. The first one is from mathematics, including the introduction of algorithms, Turing machines and logical proof systems. The second one is from physics, from classical mechanics to relativity and quantum mechanics and beyond. The interaction of these two streams by itself is worth reading by anyone who is pondering on the fundamental doubts of the mind, intelligence and conciousness.&lt;/p&gt;
-
-&lt;p&gt;From the first stream, the book&amp;rsquo;s main argument rests on the Turing halting problem and Gödel&amp;rsquo;s incompleteness theorems. From these theorems, he argues that machines could not be like humans since it could not know the truthness of these self-referencing statements. I am not yet convinced by this seemingly sound argument, because it rests on the fact that there is certain statement about the system itself that it could not know true or false. We humans could perceive that these incomplete statements are true, because we are not these systems therefore they are not self-referencing statements for ourselves. We do not have an answer to whether we ourselves are free from these incomplete limitations, since if we had the answer it would violate the incompleteness theorems. Who knows, maybe some aliens would think of us as no difference from we think of the machines, and apply a form of Cantor&amp;rsquo;s diagonalization to say that &amp;ldquo;look, humans cannot have mind because they cannot understand these true statements that are obvious to us&amp;rdquo;! As a result, the presumption that humans are free from incompleteness is one most ridiculous hidden idea in the book.&lt;/p&gt;
-
-&lt;p&gt;In the second stream, the book became much more constructive. It is a great journey to explore the searching of an explanation for the mind through the vast space of knowledge in physics. However, throughout the arguments, the ideas could only belong to a set of speculations. This is not a surprise since he argues for the necessity of a correct quantum gravity (CQG) theory to explain the human mind, which should ultimately unify quantum mechanics and general relativity under a single mathematical framework. It is the fact that no such theory yet exists that shakes down many of his arguments and made them merely speculations. As a result, this book in my opinion does a very bad job at opposing artificial intelligence in both streams.&lt;/p&gt;
-
-&lt;p&gt;In general, the book is still very much enjoyable just because it contains a grand set of fundamental knowledge. It is particularly so reading from a critic point of view. Roger Penrose also has two later books in the same string of thought, which undoubtedly may explain his ideas better and may resolve some of this book&amp;rsquo;s issues. I am looking forward to reading them as valuable thought excercises, but may be after a few books from some other human endeavors.&lt;/p&gt;
-
-&lt;p&gt;Finally, here is a video where Roger Penrose explains some of his ideas. Watch with a critic&amp;rsquo;s mind!&lt;/p&gt;
-
-&lt;div class=&#34;embed video-player&#34; style=&#34;text-align: center;&#34;&gt;
-&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/eVq39QbFQXE&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
+      <description>Finally finished reading Roger Penrose&amp;rsquo;s classic book &amp;ldquo;The Emperor&amp;rsquo;s New Mind: Concerning Computers, Minds and The Laws of Physics&amp;rdquo;. As a junior Ph.D. student who hopes to have a career in the research of artificial intelligence (machine learning or deep learning more precisely), I was reading this book as a touch on the opposite of the belief that intelligence is achievable by machines. Apart from several of his dramatic tones towards mocking A.</description>
     </item>
     
     <item>
@@ -115,46 +54,7 @@
       <pubDate>Tue, 21 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/precondition/</guid>
-      <description>
-
-&lt;p&gt;Medical study shows that two consciousness could exist in the same body, if the connection between the left and the right brain hemispheres are damaged. Does this medical fact tells us something more about intelligence? My opinion is, it is an evidence for the hypothesis that certain deficiency in low-level communication is a precondition for intelligence. I know that sounds crazy or perhaps hard to understand, but please allow me to explain.&lt;/p&gt;
-
-&lt;h3 id=&#34;a-different-understanding-of-alien-hand-syndrome&#34;&gt;A Different Understanding of Alien Hand Syndrome&lt;/h3&gt;
-
-&lt;p&gt;This Friday night I was watching the rather dramatized and thrilling episodes of &amp;ldquo;Dark Matters: Twisted But True&amp;rdquo;. In episode 4 of season 1, there is a story about alien hand syndrome, a rare neurological disorder that causes hand movement without the person being aware of what is happening or having control over the action. In the story, a woman&amp;rsquo;s left hand tried to kill herself without her being able to control it. After some thrilling mood rendering, it was revealed that her brain had some permanent damage resulted from a stroke prior to the syndrome. The problem was that the connection between her brain&amp;rsquo;s left and right hemispheres was broken, and it created two consciousness in the same body.&lt;/p&gt;
-
-&lt;p&gt;This reminds me of a similar illustration in Dr. Michio Kaku&amp;rsquo;s recent book of popular science &amp;ndash; &amp;ldquo;The Future of the Mind: The Scientific Quest to Understand, Enhance, and Empower the Mind&amp;rdquo; &amp;ndash; in whose chapter 1 there is a section named &amp;ldquo;The Split-Brain Paradox&amp;rdquo;. It features the research by Dr. Roger Sperry, a Nobel laureate who studied the effects of split-brain, in particular the fact that two consciousness could exist in the two hemispheres if the connection between them is broken. He also imagined that &amp;ldquo;both the left and the right hemisphere may be conscious simultaneously in different, even in mutually conflicting, mental experiences that run along in parallel.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Following Dr. Roger Sperry&amp;rsquo;s thought, both the TV show episode and Dr. Michio Kaku&amp;rsquo;s book posit on the possibility that there are two consciousness existing in everone&amp;rsquo;s mind at every moment. Dr. Michio Kaku even interviewed Dr. Michael Gazzaniga of the University of California, Santa Barbara, for how experiments can be done to test the theory. The book mentioned a safe way to communicate separately to each hemisphere without the knowledge of the other, and it sucessfully shows that two hemispheres would give different answers to the same question.&lt;/p&gt;
-
-&lt;p&gt;However, there is an apparent logical flaw in the above mentioned thought and the corresponding experiments. This is one very apparent example of causation fallacy, in which there are two possible causal reasoning routines to explain the same results. One is of course, as Dr. Sperry and Dr. Kaku believe, that there were two consciousness exist in the same skull for anyone at any time. The other obvious and often ommitted possibility is that there was only one consciousness in one&amp;rsquo;s brain, until there is a physical disconnection between the two hemispheres.&lt;/p&gt;
-
-&lt;p&gt;If you ask me which theory I believe, I would say the second one. This is because to prove the first theory, one would have to show that when the two hemispheres are in normal connection there exists two consciousness at the same time. This is unlikely to be successful because normal people apparently posit themselves as one whole consciousness with coherent behavior in all body parts. One may wonder then, how about dissociative identity disorder (DID) in which one person could have multiple personalities? Well, the answer is that it does not disqualify our second theory because the disorder does not show multiple personalities at the same time. Rather, multiple dissociated personality states would alternately control a person&amp;rsquo;s behavior.&lt;/p&gt;
-
-&lt;p&gt;One can debate the causation fallacy above endlessly untill some experiments can be done to prove one and disprove the other. But before that, I will assume the second theory is true throughout the rest of the blog.&lt;/p&gt;
-
-&lt;h3 id=&#34;communication-not-as-a-part-of-intelligence&#34;&gt;Communication (not?) as a Part of Intelligence&lt;/h3&gt;
-
-&lt;p&gt;The focus of the split-brain phenomenon rests on the connection between left and right hemispheres. If the connection is broken, then one can easily see signs of two consciousness. This means that to be a coherent intelligent entity, the place in which consciousness exists (in this case the brain) must have proper physical connection inside its every component. The necessity of such connection suggests that communication is a crucial part for intelligence.&lt;/p&gt;
-
-&lt;p&gt;However, communication itself is an ambiguous word. For example, communication between humans could mean natural languages, facial expressions or body movements. One usually thinks that this type of communication is different from the type between the two hemispheres of the brain &amp;ndash; which consists of eletronic activity and chemical reactions. If we consider each human as an intelligent entity, then I will call the first kind a high-level communication, and the second kind inside brain as low-level communication. With this dichotomy, I can explain things in a much clearer fashion.&lt;/p&gt;
-
-&lt;p&gt;In the famous paper &amp;ldquo;Computing Machinery and Intelligence&amp;rdquo;, Alan Turing argues that the Turing test could be a philosophical definition for intelligence. The test is essentially deciding whether a machine has intelligence by how good it immitates a human. The decision is made by the judge in a probably and approximately correct way, by trying to distinguish between the machine and the human through questioning and answering. This implicitly indicates that communication (the questioning and answering process) is necessary in deciding whether a machine has intelligence. This is true at least for humans, who unanimously think of each other as an intelligent entity.&lt;/p&gt;
-
-&lt;p&gt;One thing I do not think Turing test encompasses is the possibility of intelligence that does not communicate with humans, and also intelligence that is different from or beyond human comprehension. It only judges whether something is intelligence using one unanimously agreed intelligent entity - human, but I do not believe human is the only possible intelligent entity. It is possible for intelligent machines to communicate with each other in a language that is not English or Chinese, but still could be thought of as being intelligent. However, in philosophy there is probably no better way to define intelligence other than Turing test, because intelligence is a meaningless entity in many people&amp;rsquo;s belief. This belief may even include the definition itself.&lt;/p&gt;
-
-&lt;p&gt;All the above discussions are about high-level communication. I think that people can argue endlessly about whether high-level communication is a necessity for intelligence, and I just gave one example above. On the other hand, the question that whether low-level communication is necessary for intelligence is not an ambiguous question in my opinion, especially for the boundary of something being one or multiple intelligent entity. This is already proved by the alient hand syndrome mentioned in the previous section &amp;ndash; low-level communication is a necessity.&lt;/p&gt;
-
-&lt;h3 id=&#34;one-precondition-for-intelligence&#34;&gt;One Precondition for Intelligence&lt;/h3&gt;
-
-&lt;p&gt;Of course, being intelligent alone seems very meaningless. The meaning of being intelligent, at least in the sense for humans, partially rests in the fact that we can communicate with other intelligent entities. On the other hand, if Turing&amp;rsquo;s definition on intelligence is correct, then to decide whether some machine is intelligence at least two other intelligent entities must present &amp;ndash; one to be immitated and the other the judge. Combining with out previous discussion on high-level and low-evel communication, this seemingly boring reasoning gives us a quite striking conclusion: one necessity for the existence of intelligence is that there must be certain deficiency in low-level communication.&lt;/p&gt;
-
-&lt;p&gt;The reason that low-level communication must be deficient for there to be multiple intelligent entity is because if there was low-level communication, the supposedly different intelligent entity would better end up being one intelligence. Speaking in a more abstract way, this makes sense because if low-level communication was efficient, making all the intelligent components a coherent single intelligent entity is simply also more efficient. This analogy is actually being used by software and hardware engineers everyday, such as we never transfer data across the Internet if it was simply a memory copy inside the same computer.&lt;/p&gt;
-
-&lt;p&gt;An acute reader might question at this point that I was not able to define in a clear way what is the difference between low-level and high-level communication. You are right. All that I can say about the difference between low-level and high-level communication is relative to humans. We ought to think natural language as a form of high-level communication, and the electronic and chemical reactions happening in our brain as a form of low-level communication. The reason why we need natural language in the first place is that we want to be more efficient as a whole, under the precondition that low-level communication is deficient.&lt;/p&gt;
-
-&lt;p&gt;Such relativity has more profound implications. It is an open question whether relative to a country, the communication between its citizens is a low-level one whereas the political agenda in between contries is a form of high-level communication, although the former one is by the means of natural languages. If such hypothesis could be modeled in a computational way, this may open another possibility of modeling society by computation. Then, this could probably enable us to use rigorous methamatics to analyze both societies and individuals, by assuming they are relative intelligent entities.&lt;/p&gt;
-</description>
+      <description>Medical study shows that two consciousness could exist in the same body, if the connection between the left and the right brain hemispheres are damaged. Does this medical fact tells us something more about intelligence? My opinion is, it is an evidence for the hypothesis that certain deficiency in low-level communication is a precondition for intelligence. I know that sounds crazy or perhaps hard to understand, but please allow me to explain.</description>
     </item>
     
     <item>
@@ -163,85 +63,7 @@
       <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/datasetdup/</guid>
-      <description>
-
-&lt;ul&gt;
-&lt;li&gt;Update June 8th 2015: The dataset duplication issues are fixed in the &lt;a href=&#34;http://arxiv.org/abs/1502.01710&#34;&gt;latest revision of our technical report&lt;/a&gt;. Some of our large-scale datasets became smaller than before, but the general conclusion in the technical report still holds. The information below is retained for your reference, although they are no longer valid. We are working on extending comparisons with stronger baseline models and releasing the datasets as soon as possible.&lt;/li&gt;
-&lt;li&gt;Update April 9th 2015: In wake of dataset duplication issues for the Amazon reviews dataset, professor &lt;a href=&#34;http://cseweb.ucsd.edu/~jmcauley&#34;&gt;Julian McAuley&lt;/a&gt; updated their &lt;a href=&#34;http://snap.stanford.edu/data/web-Amazon.html&#34;&gt;SNAP Amazon reviews dataset distribution webpage&lt;/a&gt; with an extra note and an extra data duplication file.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;On April 6th 2015, we discovered some issues related to the datasets used in our technical report &lt;a href=&#34;http://arxiv.org/abs/1502.01710&#34;&gt;&amp;ldquo;Text Understanding from Scratch&amp;rdquo;&lt;/a&gt;. These issues include multiple instances of the same sample, and overlaps between training and testing data. These issues were first discovered by Alec Radford, head of research at &lt;a href=&#34;https://indico.io&#34;&gt;indico&lt;/a&gt;, who carefully checked a few of our released datasets and found them. I want offer my thanks to him.&lt;/p&gt;
-
-&lt;p&gt;Here is what I am going to do to solve this issue:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Remove Amazon review and Sogou news datasets from release. The DBPedia dataset is completely clean.&lt;/li&gt;
-&lt;li&gt;Put a notification in our technical report&amp;rsquo;s first page, untill we can resolve these issues and obtain new experiment results. This is already submitted to arXiv, but it may take a few days to appear online.&lt;/li&gt;
-&lt;li&gt;Solve the issues in the datasets, and redo all related experiments.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I apologize for any inconvenience and inaccurate information resulted from this. I am aware that this technical report drew a lot of attention from fellow researchers all around the world, and I will do my best to resolve the issues as soon as possible.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-are-the-issues&#34;&gt;What are the issues?&lt;/h3&gt;
-
-&lt;p&gt;As said before, the issues are multiple instances of the same sample, and overlaps between training and testing data. I am still investigating the reasons behind these issues, but so far it looks like there were duplications from the datasets&amp;rsquo; original owners and distributors. Below is a break down of the issues for the datasets in the original technical report.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;DBPedia&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplication in Train: 0 of 560000, 0 %&lt;/li&gt;
-&lt;li&gt;Duplication in Test: 0 of 70000, 0 %&lt;/li&gt;
-&lt;li&gt;Overlap: 0 of 70000, 0%&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Yahooo Answers&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplication in Train: 434 of 1400000, 0%&lt;/li&gt;
-&lt;li&gt;Duplication in Test: 0 of 50000, 0%&lt;/li&gt;
-&lt;li&gt;Overlap: 32 of 50000, 0%&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Amazon Review Full Score&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplication in Train: 1434980 of 5000000, 29%&lt;/li&gt;
-&lt;li&gt;Duplication in Test: 175671 of 1250000, 14%&lt;/li&gt;
-&lt;li&gt;Overlap: 513193 of 1250000, 41%&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Amazon Review Polarity&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplication in Train: 1854042 of 6000000, 31%&lt;/li&gt;
-&lt;li&gt;Duplication in Test: 162916 of 900000, 18%&lt;/li&gt;
-&lt;li&gt;Overlap: 352296 of 900000, 39%&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;AGNews Corpus&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplication in Train: 13423 of 160000, 8%&lt;/li&gt;
-&lt;li&gt;Duplication in Test: 16 of 4400, 0%&lt;/li&gt;
-&lt;li&gt;Overlap: 655 of 4400, 15%&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sogou News Corpus&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Duplication in Train: 194783 of 750000, 26%&lt;/li&gt;
-&lt;li&gt;Duplication in Test: 6876 of 50000, 14%&lt;/li&gt;
-&lt;li&gt;Overlap: 15789 of 50000, 32%&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;is-the-crepe-code-affected&#34;&gt;Is the Crepe code affected?&lt;/h3&gt;
-
-&lt;p&gt;The release of &lt;a href=&#34;https://github.com/zhangxiangxiao/Crepe&#34;&gt;Crepe&lt;/a&gt; is idependent of the datasets. It is currently not affected by this issue. Also, because the DBPedia dataset is clean, the example usage for Crepe is still totally valid. The DBPedia dataset is kept online.&lt;/p&gt;
-
-&lt;p&gt;That said, if you found bugs or issues with Crepe code, please let me know.&lt;/p&gt;
-</description>
+      <description>Update June 8th 2015: The dataset duplication issues are fixed in the latest revision of our technical report. Some of our large-scale datasets became smaller than before, but the general conclusion in the technical report still holds. The information below is retained for your reference, although they are no longer valid. We are working on extending comparisons with stronger baseline models and releasing the datasets as soon as possible.</description>
     </item>
     
     <item>
@@ -250,30 +72,10 @@
       <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/aprilfoolrnn/</guid>
-      <description>&lt;p&gt;Google&amp;rsquo;s April fool surprise: reading characters in reverse order (&lt;a href=&#34;https://com.google/&#34;&gt;https://com.google/&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;It happened to be the case that the character order in Crepe (&lt;a href=&#34;https://github.com/zhangxiangxiao/Crepe&#34;&gt;https://github.com/zhangxiangxiao/Crepe&lt;/a&gt;) is also reversed.&lt;/p&gt;
-
-&lt;p&gt;The original thought was that aligning the end of a document to a fixed position (in this case at the beginning) could make it easier for the fully-connected layers to associate meaning with the ending context window.&lt;/p&gt;
-
-&lt;p&gt;This may have the effect of biasing classification towards the end reading of a text, which has a somewhat distant relationship with how recurrent neural network representation can be used for classification, since it decays the influence of document at the beginning but not so much at the end.&lt;/p&gt;
-
-&lt;p&gt;However, later I did (only) one experiment by not reversing the character order for ending alignment, and the classification result did not change in anyway that is statistically significant.&lt;/p&gt;
-
-&lt;p&gt;This was quite though-provoking for me since it might mean that decaying influence like in RNNs is probably a bad thing, or at least useless. Otherwise, why do we need bi-directional RNNs? But then again, if you are using a bi-directional RNN for contextual information, why don&amp;rsquo;t you just use a convolutional network who naturally associates a context for you?&lt;/p&gt;
-
-&lt;p&gt;Then, I went deeper in thought and started to believe that recurrent neural network is sometimes used in a wrong way in the community. Somehow regardless of situation, some researchers take RNNs for granted as the best tool for model sequences (including text, audio, time series, etc). Let me explain why this may not always make sense intuitively.&lt;/p&gt;
-
-&lt;p&gt;What is wrong here is that in most cases the sequence is presented as a whole, but the way RNN models them is by pretending the future values of a sequence is unknown and adapting its internal representation by what is seen so far. Why then, do we need to pretend the future sequence is unknown while in reality it is presented to you as a whole? This apparently does not make sense. The fact that bi-directional RNN gives a performance boost to various sequence modeling tasks is also an evidence for what I am arguing here.&lt;/p&gt;
-
-&lt;p&gt;Now we know the wrong, how do we correct it? Well, the answer is plain and simple: use a convolutional network instead! I even start to believe that convolutional network is the ultimate solution to perception and recognition, as long as the data span a time or space dimension.&lt;/p&gt;
-
-&lt;p&gt;Of course, not all sequences could be presented as whole, especially if the target is to produce actions (such as popping out words for translation, making a robot arm to move, etc). In this case to know both the past and the future may not be possible. Then, if you think even further, recurrent neural network is pretty similar to reinforcement learning &amp;ndash; the difference is that RNNs try to model the past, but RL tries to model the future. This could be the case in which RNN and RL could really shine: produce actions when an artificial agent has already perceived or recognized.&lt;/p&gt;
-
-&lt;p&gt;Putting all these pieces together, I do think in the future state-of-the art A.I. system should use convolutional networks as their perceptive or recognitive part, and a combined form of RNN and RL as the action-producing part. To make this system works well, some memory part might be needed (oh, you want to tell me DeepMind is likely working on this?)&lt;/p&gt;
-
-&lt;p&gt;By the way, today is April Fool&amp;rsquo;s. I am not responsible for whatever I say here. :P&lt;/p&gt;
-</description>
+      <description>Google&amp;rsquo;s April fool surprise: reading characters in reverse order (https://com.google/).
+It happened to be the case that the character order in Crepe (https://github.com/zhangxiangxiao/Crepe) is also reversed.
+The original thought was that aligning the end of a document to a fixed position (in this case at the beginning) could make it easier for the fully-connected layers to associate meaning with the ending context window.
+This may have the effect of biasing classification towards the end reading of a text, which has a somewhat distant relationship with how recurrent neural network representation can be used for classification, since it decays the influence of document at the beginning but not so much at the end.</description>
     </item>
     
     <item>
@@ -282,42 +84,7 @@
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://xzh.me/posts/deeplearninglandscape/</guid>
-      <description>
-
-&lt;p&gt;This blog summarizes an answer I posted to a question regarding what kinds of research are there for deep learning, in &lt;a href=&#34;http://www.zhihu.com/question/27608272/answer/37318565&#34;&gt;Zhihu&lt;/a&gt;, a Chinese equivalence of Quora. Surprisingly, that answer drew a lot of attention from many students and young researchers in China and it is currently ranked the second best answer in the subcategory of &amp;ldquo;deep learning&amp;rdquo;. I hope the summarization here could offer my bit of thought to a broader audience by translating that answer to English. Your comments and advices are welcomed!&lt;/p&gt;
-
-&lt;p&gt;In my opinion, the popular deep learning area contains four main research trends. They include optimization, generalization, representation and applications. For each of them, there are both a practical aspect and a theoretical aspect. Let&amp;rsquo;s take a closer look at each of them.&lt;/p&gt;
-
-&lt;h3 id=&#34;optimization&#34;&gt;Optimization&lt;/h3&gt;
-
-&lt;p&gt;It seems that almost all problems in deep learning can be reduced to solving mathematical optimization problems. Therefore, numerical optimization is one of the most important research trend for deep learing.&lt;/p&gt;
-
-&lt;p&gt;On the practical side, the most popular method for optimization is still stochastic gradient descent. This extremely simple method seems so stable and robust that many research projects start with it and then end with it. Of course, a lot of tricks could be used to make it faster, such as momentum, psudo-Newton methods and adaptive learning rates. Apart from these, parallelization of optimization for deep models is also a hot topic, with many papers submitted to conferences in both machine learning and distributed systems.&lt;/p&gt;
-
-&lt;p&gt;However, on the theoretical side, the only clear subject we know about is convex optimization. The unfortunate fact that most deep learning models are non-convex poses a huge gap between the practical and theoretical sides in optimization. Motivated by this, some researchers start to dig into the properties of some commonly seen but also narrowly defined models and loss functions, trying to get some information regarding the properties of local optima produced by such non-convex optimization procedures.&lt;/p&gt;
-
-&lt;h3 id=&#34;generalization&#34;&gt;Generalization&lt;/h3&gt;
-
-&lt;p&gt;Generalizability concerns whether the training error of a model could approximate the true average testing error on all possible sampling of a given problem&amp;rsquo;s data. We can approximately think of it as the difference between training error and testing error. Before deep learing became popular, one major problem in machine learning has been about controlling the generalization error.&lt;/p&gt;
-
-&lt;p&gt;For practitioners, the generalization problem anticipated by many machine learning researchers simply did not occur. On one hand this is due to the huge scale of datasets we have in this &amp;ldquo;Big Data&amp;rdquo; era. On the other hand, the development of high-performance computing devices such as GPUs enabled us to apply new regularization methods such as Dropout and DropConnect and heavy data augmentation techniques. Whether there are more effective regularization methods is one interesting topic for reseachers. Some ideas include adversarial learning and utlization of extra unlabeled samples.&lt;/p&gt;
-
-&lt;p&gt;For theorists, the effectiveness of deep learning has put heavy doubt on the theories of PAC-learning. All of the theories in this style are about &amp;ldquo;upper-bounds of upperbounds of upper-bounds&amp;hellip;&amp;rdquo;, for which the essence only concerns two kinds of statistical concepts &amp;ndash; concentration inequalities and complexity measurement. Practitioners have shown that these theories have very unrealistic estimation of generalization errors for real-world applications. Personally I believe the current gap betwen practitioners and theorists must be closed. It really should not have been like this, especially when the research in functional analysis is already pretty complete. I also feel that to make advancement in this, we need to better understand the theory in representation of deep learning models, which I will discuss in the following.&lt;/p&gt;
-
-&lt;h3 id=&#34;representation&#34;&gt;Representation&lt;/h3&gt;
-
-&lt;p&gt;Representation is a concept recently proposed by researchers in deep learning. For me, representation concerns the relationship between deep learning models and the problems they try to solve. Therefore, the questions about representation are bi-directional: one one hand, we want to know that given a deep learning model what kind of solutions to problems it can represent; on the other hand, we can also ask whether there exists a deep learning model to produce some representation for solving a given problem.&lt;/p&gt;
-
-&lt;p&gt;There are two mainstreams on the practical side. Those who deeply belive in unsupervised learning keep finding better objectives and criteria so that machines can learn to represent by themselves. These include deep belief networks, (restricted) Boltzmann machines, sparse coding and auto-encoders. In the second mainstream, researchers facing practical problems try to design deep learning models to solve them by intuition or inspiration from other disciplines. Some successful examples are convolutional networks for vision and speech, recurrent neural networks that can act upon input, and reinforcement learning models able to play games. Most of the deep learning researchers are in this trend, and it does give them the maximum impact possible.&lt;/p&gt;
-
-&lt;p&gt;However, we really do not have much to say about any theory concerning representation, except for some inspirational ideas borrowed from coginitive psychology or neural science. This is mostly because the theory of representation is drastically different for different problems. The only thing we currently can do now is to think whether and how humans could solve a problem, and then design a model to reduce it to a learning process. This is essentially an immitation game, which is a philosophical definition of intelligence proposed by Alan Turing in his 1950 paper &amp;ldquo;Computing Machinery and Intelligence&amp;rdquo;. Intuitively I also doubt the feasibility of an ultimate representation theory, since it feels like a Laplace&amp;rsquo;s demon whose existence would draw unsolvable paradoxes to the real world.&lt;/p&gt;
-
-&lt;h3 id=&#34;applications&#34;&gt;Applications&lt;/h3&gt;
-
-&lt;p&gt;The development of deep learning accompanies its revolutionization of other fields. In the past few years, deep learning has been something like a biased &amp;ldquo;dare or not&amp;rdquo; game &amp;ndash; if you dare to try, there chance of success is most likely guaranteed. Of course, this benefits largely from the explosion on the amount of data, and the availability of more powerful computational resources. At the same time, the knowledge accumulated from exploring deep learning and neural network in the past 30 years also plays an important role.&lt;/p&gt;
-
-&lt;p&gt;In the future, deep learning would continue to solve all kinds of recognition problems including vision (image classification, image segmentation, computational photography), speech (speech recognition), natural language processing (text understanding). At the same, we may see some breakthroughs on machine&amp;rsquo;s ability in acting upon data, like describing an image using text, speech synthesis, automated translation and paragraph summarization. Deep learning may also help us to find approximated solutions to NP-hard problems when inputs are constrained to a limited set. All of these are very hot topics in applications of deep learning, and they can eventually bring huge industrial benefits.&lt;/p&gt;
-</description>
+      <description>This blog summarizes an answer I posted to a question regarding what kinds of research are there for deep learning, in Zhihu, a Chinese equivalence of Quora. Surprisingly, that answer drew a lot of attention from many students and young researchers in China and it is currently ranked the second best answer in the subcategory of &amp;ldquo;deep learning&amp;rdquo;. I hope the summarization here could offer my bit of thought to a broader audience by translating that answer to English.</description>
     </item>
     
   </channel>
